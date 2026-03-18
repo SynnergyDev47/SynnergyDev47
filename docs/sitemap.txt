@@ -1,0 +1,6 @@
+/
+/pages/servicios.html
+/pages/proyectos.html
+/pages/sobre-mi.html
+/pages/agencia.html
+/pages/contacto.html
