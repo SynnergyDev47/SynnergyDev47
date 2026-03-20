@@ -76,6 +76,8 @@ El objetivo del repositorio es convertirse en un sitio profesional que:
 
 El español sigue siendo el idioma por defecto, pero ahora vive en `/es/`. La raíz del sitio (`/`) se reserva como entrada neutra para redirigir de forma explícita a la versión principal y evitar asimetrías entre idiomas.
 
+Las rutas históricas en español en la raíz (`/servicios/`, `/proyectos/`, `/sobre-mi/`, `/agencia/`, `/contacto/`) se mantienen únicamente como alias legacy con redirección inmediata a sus equivalentes canónicos bajo `/es/`, evitando contenido duplicado sin romper enlaces anteriores.
+
 ### Código en inglés
 
 Los nombres técnicos de archivos, funciones, variables y módulos deben mantenerse en inglés. El contenido visible puede estar en español o inglés según la versión de la página.
