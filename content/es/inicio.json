@@ -1,7 +1,7 @@
 {
   "locale": "es",
   "slug": "inicio",
-  "path": "/",
+  "path": "/es/",
   "title": "Synnergy Dev | Marketing y desarrollo web",
   "description": "Agencia y perfil profesional que unen estrategia, marketing y desarrollo web para marcas que quieren crecer con coherencia digital.",
   "heading": "Una base digital coherente para hacer crecer tu marca",
@@ -17,7 +17,7 @@
     },
     {
       "title": "Preparado para crecer",
-      "body": "La nueva arquitectura deja el español en la raíz, el inglés en /en/ y reserva espacio para contenido localizado y mejoras futuras."
+      "body": "La nueva arquitectura organiza el español en /es/, el inglés en /en/ y deja una raíz limpia para resolver el idioma por defecto."
     }
   ]
 }

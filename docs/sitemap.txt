@@ -1,9 +1,10 @@
 /
-/servicios/
-/proyectos/
-/sobre-mi/
-/agencia/
-/contacto/
+/es/
+/es/servicios/
+/es/proyectos/
+/es/sobre-mi/
+/es/agencia/
+/es/contacto/
 /en/
 /en/services/
 /en/projects/

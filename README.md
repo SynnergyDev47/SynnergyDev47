@@ -21,17 +21,19 @@ El objetivo del repositorio es convertirse en un sitio profesional que:
 
 ```text
 /
-├── index.html                     # Home en español (idioma por defecto)
-├── servicios/
-│   └── index.html
-├── proyectos/
-│   └── index.html
-├── sobre-mi/
-│   └── index.html
-├── agencia/
-│   └── index.html
-├── contacto/
-│   └── index.html
+├── index.html                     # Entrada neutra que redirige al idioma por defecto
+├── es/
+│   ├── index.html                # Home en español
+│   ├── servicios/
+│   │   └── index.html
+│   ├── proyectos/
+│   │   └── index.html
+│   ├── sobre-mi/
+│   │   └── index.html
+│   ├── agencia/
+│   │   └── index.html
+│   └── contacto/
+│       └── index.html
 ├── en/
 │   ├── index.html                # Home en inglés
 │   ├── services/
@@ -70,9 +72,9 @@ El objetivo del repositorio es convertirse en un sitio profesional que:
 
 ## Decisiones clave
 
-### Español por defecto
+### Español por defecto con raíz neutra
 
-La raíz del sitio representa la versión española, ya que el público principal es hispanohablante. La versión inglesa vive bajo `/en/`.
+El español sigue siendo el idioma por defecto, pero ahora vive en `/es/`. La raíz del sitio (`/`) se reserva como entrada neutra para redirigir de forma explícita a la versión principal y evitar asimetrías entre idiomas.
 
 ### Código en inglés
 
@@ -80,7 +82,7 @@ Los nombres técnicos de archivos, funciones, variables y módulos deben mantene
 
 ### SEO e internacionalización
 
-La estructura por carpetas permite URLs limpias (`/servicios/`, `/en/services/`) y sienta las bases para:
+La estructura por carpetas permite URLs limpias (`/es/servicios/`, `/en/services/`) y sienta las bases para:
 
 - `hreflang` por idioma;
 - metadatos localizados;

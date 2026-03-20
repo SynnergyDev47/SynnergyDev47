@@ -11,4 +11,4 @@
 - Responsive first para móvil, tablet, laptop y escritorio.
 - Código en inglés para variables, funciones, módulos y nombres técnicos.
 - Texto visible y contenido localizado por idioma en carpetas separadas.
-- Navegación y CTAs consistentes entre páginas para reforzar identidad y conversión.
+- Arquitectura simétrica por idiomas: español en `/es/`, inglés en `/en/` y raíz reservada para resolver el idioma por defecto.

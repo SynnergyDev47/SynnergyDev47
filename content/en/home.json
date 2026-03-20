@@ -17,7 +17,7 @@
     },
     {
       "title": "Ready to scale",
-      "body": "The architecture keeps Spanish at the root, English under /en/, and space for localized content."
+      "body": "The architecture now keeps Spanish in /es/, English in /en/, and the root free to resolve the default locale cleanly."
     }
   ]
 }
