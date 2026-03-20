@@ -1,0 +1,23 @@
+{
+  "locale": "es",
+  "slug": "agencia",
+  "path": "/agencia/",
+  "title": "Agencia | Synnergy Dev",
+  "description": "Visión de agencia orientada a unir estrategia, identidad digital, contenido y desarrollo web dentro de una misma propuesta.",
+  "heading": "Una agencia digital construida sobre coherencia y enfoque",
+  "intro": "La web presenta una narrativa de agencia que puede convivir con servicios propios, colaboraciones y proyectos freelance.",
+  "sections": [
+    {
+      "title": "Identidad unificada",
+      "body": "El sitio se diseña como un ecosistema de marca, no como una suma de páginas inconexas."
+    },
+    {
+      "title": "Escalabilidad operativa",
+      "body": "La nueva organización por idioma y por rutas deja lista la base para ampliar contenidos y servicios."
+    },
+    {
+      "title": "Posicionamiento sólido",
+      "body": "La combinación de estructura semántica, URLs claras y contenido localizado ayuda a preparar un SEO más serio."
+    }
+  ]
+}

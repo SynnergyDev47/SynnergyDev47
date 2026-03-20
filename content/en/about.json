@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "about",
+  "path": "/en/about/",
+  "title": "About | Synnergy Dev",
+  "description": "Professional profile focused on connecting marketing, communication, and web development for brands with business goals.",
+  "heading": "A professional profile with strategic and technical perspective",
+  "intro": "This page links the human side of the project with digital execution and a clear value proposition.",
+  "sections": [
+    {
+      "title": "Hybrid mindset",
+      "body": "The offer combines strategic thinking, digital design, and development to avoid disconnected websites."
+    },
+    {
+      "title": "Clear communication",
+      "body": "Every deliverable aims to organize the brand narrative and translate it into a useful web experience."
+    },
+    {
+      "title": "Long-term growth",
+      "body": "The project structure is prepared to evolve with new pages, languages, and content assets."
+    }
+  ]
+}

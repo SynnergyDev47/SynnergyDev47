@@ -1,6 +1,12 @@
 /
-/pages/servicios.html
-/pages/proyectos.html
-/pages/sobre-mi.html
-/pages/agencia.html
-/pages/contacto.html
+/servicios/
+/proyectos/
+/sobre-mi/
+/agencia/
+/contacto/
+/en/
+/en/services/
+/en/projects/
+/en/about/
+/en/agency/
+/en/contact/

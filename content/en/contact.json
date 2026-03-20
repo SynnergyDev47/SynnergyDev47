@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "contact",
+  "path": "/en/contact/",
+  "title": "Contact | Synnergy Dev",
+  "description": "Contact page prepared to capture opportunities related to marketing, web development, or strategic collaboration.",
+  "heading": "Let us start a conversation with clarity and purpose",
+  "intro": "The structure is ready to evolve into a full form, CRM integration, and service-specific lead flows.",
+  "sections": [
+    {
+      "title": "Web projects",
+      "body": "Suitable for corporate sites, landing pages, portfolios, and structural or performance improvements."
+    },
+    {
+      "title": "Marketing and communication",
+      "body": "We can work on message clarity, value proposition, and conversion-focused experiences."
+    },
+    {
+      "title": "Mixed collaborations",
+      "body": "There is also room for partnerships between agency, design, and development teams."
+    }
+  ]
+}

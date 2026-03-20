@@ -1,0 +1,23 @@
+{
+  "locale": "es",
+  "slug": "proyectos",
+  "path": "/proyectos/",
+  "title": "Proyectos | Synnergy Dev",
+  "description": "Espacio para mostrar proyectos, casos de estudio y ejemplos de trabajo con una narrativa clara y orientada a resultados.",
+  "heading": "Proyectos y casos de estudio con una narrativa clara",
+  "intro": "Esta sección está preparada para mostrar resultados, procesos y decisiones de diseño o desarrollo con enfoque comercial.",
+  "sections": [
+    {
+      "title": "Casos con contexto",
+      "body": "Cada proyecto podrá explicar el problema, el enfoque, la solución y el impacto conseguido."
+    },
+    {
+      "title": "Sistema visual consistente",
+      "body": "La arquitectura actual facilita presentar portfolios, categorías y testimonios con una estética homogénea."
+    },
+    {
+      "title": "Base para SEO y confianza",
+      "body": "Los proyectos servirán también para reforzar autoridad temática, enlazado interno y credibilidad."
+    }
+  ]
+}

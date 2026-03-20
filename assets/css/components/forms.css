@@ -1,1 +1,9 @@
-/* Estilos de formularios pendientes de implementación. */
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--color-text);
+}

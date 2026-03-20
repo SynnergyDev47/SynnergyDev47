@@ -1,0 +1,23 @@
+{
+  "locale": "es",
+  "slug": "inicio",
+  "path": "/",
+  "title": "Synnergy Dev | Marketing y desarrollo web",
+  "description": "Agencia y perfil profesional que unen estrategia, marketing y desarrollo web para marcas que quieren crecer con coherencia digital.",
+  "heading": "Una base digital coherente para hacer crecer tu marca",
+  "intro": "Diseñamos una presencia web clara, rápida y preparada para convertir, comunicar y posicionar.",
+  "sections": [
+    {
+      "title": "Estrategia antes que ruido",
+      "body": "La estructura del sitio, el contenido y el diseño se plantean para reforzar la propuesta de valor y preparar una base SEO sólida."
+    },
+    {
+      "title": "Diseño visual consistente",
+      "body": "La interfaz utiliza componentes, espaciados y estilos reutilizables para sostener una identidad homogénea en todas las páginas."
+    },
+    {
+      "title": "Preparado para crecer",
+      "body": "La nueva arquitectura deja el español en la raíz, el inglés en /en/ y reserva espacio para contenido localizado y mejoras futuras."
+    }
+  ]
+}

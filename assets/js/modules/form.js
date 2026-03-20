@@ -1,1 +1,1 @@
-// Lógica del formulario pendiente de implementación.
+// Form behaviors will be implemented here.

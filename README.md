@@ -1,39 +1,49 @@
 # Synnergy Dev
 
-Sitio web en construcción para una marca híbrida que une dos frentes complementarios:
+Sitio web base para una marca híbrida que une dos frentes complementarios:
 
 - una **agencia de marketing** orientada a ayudar marcas a comunicar mejor, captar oportunidades y crecer;
 - un perfil profesional enfocado en **desarrollo web**, pensado tanto para proyectos de la agencia como para colaboraciones freelance.
 
-La base técnica del proyecto será deliberadamente simple: **HTML, CSS y JavaScript puros**. La intención es construir una web clara, rápida, mantenible y escalable sin depender de frameworks en esta primera etapa.
+La base técnica del proyecto sigue siendo deliberadamente simple: **HTML, CSS y JavaScript puros**. La arquitectura, sin embargo, evoluciona para soportar una web más seria en responsive, identidad visual, bilingüismo y SEO.
 
 ## Visión del proyecto
 
-El objetivo final de este repositorio es convertirse en un sitio web profesional que:
+El objetivo del repositorio es convertirse en un sitio profesional que:
 
 1. presente con claridad la propuesta de valor de la agencia;
 2. muestre los servicios de desarrollo web como una oferta especializada y complementaria;
 3. exhiba proyectos, casos de estudio y credenciales de forma ordenada;
-4. facilite el contacto con potenciales clientes de agencia, desarrollo freelance o colaboraciones mixtas.
+4. facilite el contacto con potenciales clientes de agencia, desarrollo freelance o colaboraciones mixtas;
+5. mantenga una base preparada para contenido localizado y posicionamiento internacional.
 
-En su estado completado, el proyecto debería comunicar:
-
-- una identidad de marca sólida;
-- una oferta de servicios bien estructurada;
-- una narrativa coherente entre marketing, diseño digital y desarrollo web;
-- una experiencia de navegación limpia, moderna y enfocada en conversión.
-
-## Estructura base del proyecto
+## Arquitectura actual
 
 ```text
 /
-├── index.html
-├── pages/
-│   ├── servicios.html
-│   ├── proyectos.html
-│   ├── sobre-mi.html
-│   ├── agencia.html
-│   └── contacto.html
+├── index.html                     # Home en español (idioma por defecto)
+├── servicios/
+│   └── index.html
+├── proyectos/
+│   └── index.html
+├── sobre-mi/
+│   └── index.html
+├── agencia/
+│   └── index.html
+├── contacto/
+│   └── index.html
+├── en/
+│   ├── index.html                # Home en inglés
+│   ├── services/
+│   │   └── index.html
+│   ├── projects/
+│   │   └── index.html
+│   ├── about/
+│   │   └── index.html
+│   ├── agency/
+│   │   └── index.html
+│   └── contact/
+│       └── index.html
 ├── assets/
 │   ├── css/
 │   │   ├── base/
@@ -44,12 +54,10 @@ En su estado completado, el proyecto debería comunicar:
 │   │   ├── modules/
 │   │   └── main.js
 │   ├── img/
-│   │   ├── branding/
-│   │   ├── projects/
-│   │   ├── services/
-│   │   ├── icons/
-│   │   └── testimonials/
 │   └── fonts/
+├── content/
+│   ├── es/
+│   └── en/
 ├── data/
 │   ├── projects.json
 │   ├── services.json
@@ -60,53 +68,34 @@ En su estado completado, el proyecto debería comunicar:
     └── brand-guide.md
 ```
 
-## Qué debería ser este proyecto cuando esté completado
+## Decisiones clave
 
-Cuando la web esté terminada, debería incluir como mínimo:
+### Español por defecto
 
-- una **home** potente con propuesta de valor, diferenciadores y llamadas a la acción;
-- una página de **servicios** que conecte marketing y desarrollo web de manera estratégica;
-- una sección de **proyectos** o portafolio con ejemplos reales, categorías o casos de estudio;
-- una página sobre la **agencia** y otra más personal/profesional para reforzar confianza;
-- una página de **contacto** pensada para captar leads de forma directa;
-- una identidad visual consistente en tipografía, color, tono y componentes reutilizables.
+La raíz del sitio representa la versión española, ya que el público principal es hispanohablante. La versión inglesa vive bajo `/en/`.
 
-## Las 3 fases clave del proceso de creación
+### Código en inglés
 
-### Fase 1: Arquitectura y base del proyecto
+Los nombres técnicos de archivos, funciones, variables y módulos deben mantenerse en inglés. El contenido visible puede estar en español o inglés según la versión de la página.
 
-En esta fase se define la estructura del sitio, la organización de carpetas, las páginas principales y la base visual/técnica del proyecto. El objetivo es dejar una fundación ordenada antes de entrar en diseño detallado o contenido final.
+### SEO e internacionalización
 
-Incluye tareas como:
+La estructura por carpetas permite URLs limpias (`/servicios/`, `/en/services/`) y sienta las bases para:
 
-- estructurar archivos y carpetas;
-- definir sitemap y secciones principales;
-- preparar estilos globales y módulos reutilizables;
-- establecer la lógica inicial para contenido, navegación y escalabilidad.
+- `hreflang` por idioma;
+- metadatos localizados;
+- enlazado interno coherente;
+- ampliación futura del sitemap;
+- contenido organizado por idioma.
 
-### Fase 2: Diseño, contenido y posicionamiento
+### Responsive e identidad visual
 
-En esta fase se construye la identidad comunicacional del sitio. Aquí se traduce la estrategia del proyecto en mensajes, secciones, jerarquías visuales y narrativa comercial.
+Los estilos base ya contemplan una navegación adaptable, componentes reutilizables y un sistema visual consistente como punto de partida.
 
-Incluye tareas como:
+## Próximos pasos sugeridos
 
-- redactar propuesta de valor y mensajes principales;
-- definir identidad visual, tono y estilo;
-- diseñar la experiencia de usuario de cada sección;
-- organizar servicios, proyectos, testimonios y llamadas a la acción.
-
-### Fase 3: Implementación, optimización y publicación
-
-En esta fase se materializa la versión final del sitio con foco en funcionamiento, rendimiento y presentación profesional.
-
-Incluye tareas como:
-
-- completar el maquetado de páginas y componentes;
-- integrar interacciones en JavaScript cuando aporten valor;
-- cargar proyectos, textos e imágenes reales;
-- revisar responsive design, rendimiento y accesibilidad;
-- dejar el sitio listo para despliegue y evolución futura.
-
-## Estado actual
-
-Actualmente este repositorio contiene la **estructura inicial completa** del proyecto y archivos mínimos de arranque. Todavía no se ha desarrollado el diseño final ni el contenido definitivo; esta etapa sirve como punto de partida para construir el sitio con orden.
+1. Completar el contenido real de home, servicios, agencia y contacto.
+2. Poblar `content/es/` y `content/en/` con copy definitivo.
+3. Añadir datos reales a proyectos, servicios y testimonios.
+4. Incorporar SEO avanzado: Open Graph, datos estructurados y sitemap XML.
+5. Integrar formularios y analítica sin perder simplicidad técnica.
