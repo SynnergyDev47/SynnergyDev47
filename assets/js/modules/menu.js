@@ -1,1 +1,1 @@
-// Lógica del menú pendiente de implementación.
+// Menu interactions will be implemented here.

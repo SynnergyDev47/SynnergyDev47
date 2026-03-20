@@ -1,1 +1,1 @@
-// Lógica de filtros pendiente de implementación.
+// Filtering behaviors will be implemented here.

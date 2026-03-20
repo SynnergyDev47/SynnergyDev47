@@ -1,1 +1,3 @@
-/* Estilos de la sección de contacto pendientes de implementación. */
+.page-inner .content-section {
+  padding-bottom: var(--space-2xl);
+}

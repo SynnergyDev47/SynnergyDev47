@@ -1,0 +1,23 @@
+{
+  "locale": "es",
+  "slug": "contacto",
+  "path": "/contacto/",
+  "title": "Contacto | Synnergy Dev",
+  "description": "Página de contacto preparada para captar oportunidades relacionadas con marketing, desarrollo web o colaboraciones estratégicas.",
+  "heading": "Abramos una conversación con intención y claridad",
+  "intro": "La estructura está lista para evolucionar hacia un formulario completo, integración con CRM y mensajes por tipo de servicio.",
+  "sections": [
+    {
+      "title": "Proyectos web",
+      "body": "Ideal para webs corporativas, landings, portafolios y mejoras de estructura o rendimiento."
+    },
+    {
+      "title": "Marketing y comunicación",
+      "body": "Podemos trabajar la claridad del mensaje, la propuesta de valor y la experiencia de conversión."
+    },
+    {
+      "title": "Colaboraciones mixtas",
+      "body": "También hay espacio para alianzas entre agencia, diseño y desarrollo con objetivos compartidos."
+    }
+  ]
+}
