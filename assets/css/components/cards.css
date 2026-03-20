@@ -1,1 +1,11 @@
-/* Estilos de cards pendientes de implementación. */
+.card {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(16, 29, 49, 0.96), rgba(10, 19, 34, 0.92));
+  box-shadow: var(--shadow-md);
+}
+
+.content-card h2 {
+  margin-bottom: var(--space-xs);
+}

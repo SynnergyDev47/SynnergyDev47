@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "services",
+  "path": "/en/services/",
+  "title": "Services | Synnergy Dev",
+  "description": "Marketing, digital identity, and web development services designed to create clarity, consistency, and sustainable growth.",
+  "heading": "Services built for a stronger digital presence",
+  "intro": "We connect strategy, content, and development so the website is not only attractive, but useful and scalable.",
+  "sections": [
+    {
+      "title": "Strategic marketing",
+      "body": "We refine messaging, value proposition, and conversion structure to attract better opportunities."
+    },
+    {
+      "title": "Brand-led web design",
+      "body": "We create responsive interfaces aligned with the brand to communicate professionalism and trust."
+    },
+    {
+      "title": "Custom web development",
+      "body": "We build fast, maintainable websites with technical SEO in mind from the start."
+    }
+  ]
+}

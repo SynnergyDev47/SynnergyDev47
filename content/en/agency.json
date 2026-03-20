@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "agency",
+  "path": "/en/agency/",
+  "title": "Agency | Synnergy Dev",
+  "description": "Agency vision built around strategy, digital identity, content, and web development within one coherent proposition.",
+  "heading": "A digital agency built on coherence and focus",
+  "intro": "The website supports an agency narrative that can coexist with direct services, collaborations, and freelance work.",
+  "sections": [
+    {
+      "title": "Unified identity",
+      "body": "The site is designed as a brand ecosystem, not as a group of disconnected pages."
+    },
+    {
+      "title": "Operational scalability",
+      "body": "The new language and route organization leaves the project ready for future content expansion."
+    },
+    {
+      "title": "Stronger positioning base",
+      "body": "Semantic structure, clear URLs, and localized content help prepare stronger SEO."
+    }
+  ]
+}

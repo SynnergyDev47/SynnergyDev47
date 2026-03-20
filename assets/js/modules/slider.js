@@ -1,1 +1,1 @@
-// Lógica del slider pendiente de implementación.
+// Slider behaviors will be implemented here.

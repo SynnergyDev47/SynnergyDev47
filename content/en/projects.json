@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "projects",
+  "path": "/en/projects/",
+  "title": "Projects | Synnergy Dev",
+  "description": "A dedicated space for projects and case studies built around clear storytelling and business-oriented outcomes.",
+  "heading": "Projects and case studies with a clear narrative",
+  "intro": "This section is prepared to explain context, process, and results in a way that supports trust and positioning.",
+  "sections": [
+    {
+      "title": "Case studies with context",
+      "body": "Each project can explain the challenge, the approach, the solution, and the outcome."
+    },
+    {
+      "title": "Consistent presentation system",
+      "body": "The architecture makes it easier to present portfolios, categories, and testimonials consistently."
+    },
+    {
+      "title": "SEO and trust signals",
+      "body": "Projects can also reinforce topical authority, internal linking, and credibility."
+    }
+  ]
+}

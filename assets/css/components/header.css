@@ -1,1 +1,85 @@
-/* Estilos del header pendientes de implementación. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(16px);
+  background: rgba(7, 17, 31, 0.82);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 1rem 0;
+}
+
+.brand-mark {
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.site-nav {
+  flex: 1 1 100%;
+  order: 3;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active {
+  background: rgba(79, 209, 197, 0.12);
+  color: var(--color-text);
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.language-pill {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+}
+
+.language-pill.is-current {
+  border-color: rgba(79, 209, 197, 0.45);
+  color: var(--color-text);
+  background: rgba(79, 209, 197, 0.12);
+}
+
+@media (min-width: 62rem) {
+  .site-header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .site-nav {
+    flex: 1 1 auto;
+    order: 0;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+}

@@ -1,1 +1,3 @@
-/* Estilos de la sección de servicios pendientes de implementación. */
+.page-inner .hero-section {
+  padding-top: var(--space-xl);
+}

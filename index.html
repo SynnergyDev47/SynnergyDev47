@@ -3,19 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Synnergy Dev | Agencia de marketing y desarrollo web</title>
-    <meta
-      name="description"
-      content="Base inicial del portafolio/agencia para presentar servicios de marketing y desarrollo web."
-    />
+    <title>Synnergy Dev | Selección de idioma</title>
+    <meta name="description" content="Entrada principal del sitio. La versión en español carga por defecto y también puedes acceder a la versión en inglés." />
+    <meta http-equiv="refresh" content="0; url=/es/" />
+    <link rel="canonical" href="/es/" />
+    <link rel="alternate" hreflang="es" href="/es/" />
+    <link rel="alternate" hreflang="en" href="/en/" />
+    <link rel="alternate" hreflang="x-default" href="/es/" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
-    <main>
-      <h1>Synnergy Dev</h1>
-      <p>Base inicial del proyecto.</p>
+  <body class="page-home">
+    <main id="main-content">
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Idioma por defecto</p>
+            <h1>Redirigiendo a la versión en español</h1>
+            <p class="lead">La raíz del sitio actúa como entrada neutra y envía por defecto a <strong>/es/</strong> para mantener una arquitectura de idiomas simétrica.</p>
+            <div class="button-row">
+              <a class="button button-primary" href="/es/">Ir a español</a>
+              <a class="button button-secondary" href="/en/">Go to English</a>
+            </div>
+          </div>
+          <aside class="hero-panel card">
+            <h2>Acceso rápido</h2>
+            <ul class="feature-list">
+              <li>Español en <code>/es/</code></li>
+              <li>English in <code>/en/</code></li>
+              <li>Raíz reservada para resolución de idioma</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
     </main>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

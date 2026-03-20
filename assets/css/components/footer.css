@@ -1,1 +1,24 @@
-/* Estilos del footer pendientes de implementación. */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  background: rgba(7, 17, 31, 0.9);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-lg) 0 var(--space-xl);
+}
+
+.site-footer p,
+.site-footer small {
+  max-width: 48rem;
+}
+
+@media (min-width: 48rem) {
+  .site-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

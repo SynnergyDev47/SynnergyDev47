@@ -1,0 +1,23 @@
+{
+  "locale": "en",
+  "slug": "home",
+  "path": "/en/",
+  "title": "Synnergy Dev | Marketing and web development",
+  "description": "Agency and professional profile combining strategy, marketing, and web development for brands that need a coherent digital presence.",
+  "heading": "A coherent digital foundation to help your brand grow",
+  "intro": "We build a web presence that is clear, fast, and ready to communicate, convert, and rank.",
+  "sections": [
+    {
+      "title": "Strategy before noise",
+      "body": "Structure, content, and design work together to support the value proposition and a stronger SEO foundation."
+    },
+    {
+      "title": "Consistent visual system",
+      "body": "Reusable components, spacing rules, and shared styles support a unified identity across every page."
+    },
+    {
+      "title": "Ready to scale",
+      "body": "The architecture now keeps Spanish in /es/, English in /en/, and the root free to resolve the default locale cleanly."
+    }
+  ]
+}

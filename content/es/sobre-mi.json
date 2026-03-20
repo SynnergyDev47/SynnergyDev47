@@ -1,0 +1,23 @@
+{
+  "locale": "es",
+  "slug": "sobre-mi",
+  "path": "/es/sobre-mi/",
+  "title": "Sobre mí | Synnergy Dev",
+  "description": "Perfil profesional centrado en unir marketing, comunicación y desarrollo web para proyectos con visión de negocio.",
+  "heading": "Perfil profesional con visión estratégica y técnica",
+  "intro": "Esta página conecta el lado humano del proyecto con la capacidad de ejecución digital y la propuesta de valor.",
+  "sections": [
+    {
+      "title": "Enfoque híbrido",
+      "body": "La propuesta une pensamiento estratégico, diseño digital y desarrollo para evitar webs desconectadas del negocio."
+    },
+    {
+      "title": "Comunicación clara",
+      "body": "Cada entrega busca ordenar la narrativa de la marca y traducirla en una experiencia web útil y profesional."
+    },
+    {
+      "title": "Relación a largo plazo",
+      "body": "La estructura del proyecto se plantea para evolucionar con nuevas páginas, idiomas y activos de contenido."
+    }
+  ]
+}

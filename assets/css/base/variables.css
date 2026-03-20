@@ -1,3 +1,26 @@
 :root {
-  /* Variables globales pendientes de definición. */
+  --color-background: #07111f;
+  --color-surface: #101d31;
+  --color-surface-soft: #162740;
+  --color-border: rgba(148, 163, 184, 0.2);
+  --color-text: #e5eef8;
+  --color-text-muted: #a9bdd3;
+  --color-primary: #4fd1c5;
+  --color-primary-strong: #2fb5aa;
+  --color-accent: #8b5cf6;
+  --color-shadow: rgba(7, 17, 31, 0.35);
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --max-width: 72rem;
+  --radius-sm: 0.75rem;
+  --radius-md: 1.25rem;
+  --radius-lg: 1.75rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 6rem;
+  --shadow-md: 0 24px 60px -28px var(--color-shadow);
 }

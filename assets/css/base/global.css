@@ -1,4 +1,87 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(79, 209, 197, 0.16), transparent 32%),
+    linear-gradient(180deg, #07111f 0%, #0b1424 100%);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: #04111b;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.eyebrow,
+.section-kicker {
+  margin-bottom: var(--space-xs);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+p,
+li,
+small {
+  color: var(--color-text-muted);
+}
+
+.lead {
+  max-width: 42rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.content-section {
+  padding: 0 0 var(--space-3xl);
+}
+
+.section-heading {
+  margin-bottom: var(--space-lg);
+}
+
+.card-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media (min-width: 48rem) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
