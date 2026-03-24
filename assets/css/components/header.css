@@ -33,7 +33,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: clamp(0.08rem, 0.45vw, 0.2rem);
+  gap: clamp(0.04rem, 0.225vw, 0.1rem);
   width: 100%;
 }
 
@@ -44,12 +44,13 @@
 
 .nav-link {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   white-space: nowrap;
   width: 100%;
-  padding: clamp(0.35rem, 1.15vw, 0.6rem) clamp(0.2rem, 0.55vw, 0.45rem);
-  font-size: clamp(0.64rem, 1.95vw, 0.98rem);
+  padding: clamp(0.4rem, 1.35vw, 0.72rem) clamp(0.2rem, 0.55vw, 0.45rem)
+    clamp(0.26rem, 0.9vw, 0.48rem);
+  font-size: clamp(0.85rem, 2.6vw, 1.31rem);
   line-height: 1.1;
   border-radius: 999px;
   color: var(--color-text-muted);
@@ -124,6 +125,7 @@
   }
 
   .nav-link {
+    align-items: center;
     width: auto;
     padding: clamp(0.4rem, 1.7vw, 0.65rem) clamp(0.45rem, 1.8vw, 0.85rem);
     font-size: clamp(0.72rem, 2.1vw, 1rem);
