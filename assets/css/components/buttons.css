@@ -37,3 +37,29 @@
   background: color-mix(in srgb, var(--color-accent) 14%, transparent);
   color: var(--color-accent);
 }
+
+:root[data-theme='dark'] .button-primary {
+  background: linear-gradient(135deg, var(--syn-dark-blue), var(--syn-purple));
+  color: #ffffff;
+}
+
+:root[data-theme='dark'] .button-primary:hover,
+:root[data-theme='dark'] .button-primary:focus-visible {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--syn-dark-blue) 84%, white),
+    color-mix(in srgb, var(--syn-purple) 82%, white)
+  );
+}
+
+:root[data-theme='dark'] .button-secondary {
+  border-color: color-mix(in srgb, var(--syn-purple) 64%, var(--syn-dark-blue));
+  background: color-mix(in srgb, var(--syn-dark-blue) 78%, black);
+  color: #ffffff;
+}
+
+:root[data-theme='dark'] .button-secondary:hover,
+:root[data-theme='dark'] .button-secondary:focus-visible {
+  border-color: color-mix(in srgb, var(--syn-purple) 72%, white);
+  background: color-mix(in srgb, var(--syn-dark-blue) 62%, var(--syn-purple));
+}
