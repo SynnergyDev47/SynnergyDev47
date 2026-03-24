@@ -2,22 +2,22 @@
   "locale": "en",
   "slug": "home",
   "path": "/en/",
-  "title": "Synnergy Dev | Marketing and web development",
-  "description": "Agency and professional profile combining strategy, marketing, and web development for brands that need a coherent digital presence.",
-  "heading": "A coherent digital foundation to help your brand grow",
-  "intro": "We build a web presence that is clear, fast, and ready to communicate, convert, and rank.",
+  "title": "Synnergy Lab | Strategic marketing for small businesses",
+  "description": "Synnergy Lab is a strategic marketing agency that helps small businesses turn digital presence into sustainable business growth.",
+  "heading": "Strategic marketing for small businesses",
+  "intro": "We design structured, measurable marketing systems focused on turning digital presence into sustainable business growth.",
   "sections": [
     {
-      "title": "Strategy before noise",
-      "body": "Structure, content, and design work together to support the value proposition and a stronger SEO foundation."
+      "title": "Strategy before execution",
+      "body": "Synnergy Lab does not sell random posting; it builds marketing strategy that supports the business."
     },
     {
-      "title": "Consistent visual system",
-      "body": "Reusable components, spacing rules, and shared styles support a unified identity across every page."
+      "title": "Data-led decisions",
+      "body": "Every action starts with diagnosis, goals, measurement, and ongoing optimization."
     },
     {
-      "title": "Ready to scale",
-      "body": "The architecture now keeps Spanish in /es/, English in /en/, and the root free to resolve the default locale cleanly."
+      "title": "Growth with structure",
+      "body": "We support small businesses that need to professionalize marketing and turn it into a real growth system."
     }
   ]
 }

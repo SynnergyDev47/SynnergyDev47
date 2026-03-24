@@ -4,6 +4,6 @@ select {
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--color-text);
 }

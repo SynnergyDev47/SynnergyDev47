@@ -2,22 +2,22 @@
   "locale": "en",
   "slug": "services",
   "path": "/en/services/",
-  "title": "Services | Synnergy Dev",
-  "description": "Marketing, digital identity, and web development services designed to create clarity, consistency, and sustainable growth.",
-  "heading": "Services built for a stronger digital presence",
-  "intro": "We connect strategy, content, and development so the website is not only attractive, but useful and scalable.",
+  "title": "Services | Synnergy Lab",
+  "description": "Strategic diagnosis, marketing strategy, implementation, and optimization services for small businesses.",
+  "heading": "Strategic marketing services",
+  "intro": "Our work covers diagnosis, strategy, implementation, and measurement so marketing stops being improvised and starts supporting growth.",
   "sections": [
     {
-      "title": "Strategic marketing",
-      "body": "We refine messaging, value proposition, and conversion structure to attract better opportunities."
+      "title": "Strategic diagnosis",
+      "body": "We review the business, market, positioning, channels, and opportunities before proposing actions."
     },
     {
-      "title": "Brand-led web design",
-      "body": "We create responsive interfaces aligned with the brand to communicate professionalism and trust."
+      "title": "Marketing strategy",
+      "body": "We define value proposition, audiences, channels, goals, and funnel logic with clear priorities."
     },
     {
-      "title": "Custom web development",
-      "body": "We build fast, maintainable websites with technical SEO in mind from the start."
+      "title": "Implementation and optimization",
+      "body": "We execute aligned actions and improve them using relevant metrics and strategic reading."
     }
   ]
 }

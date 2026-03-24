@@ -13,6 +13,21 @@
   gap: var(--space-md);
 }
 
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-panel::after {
+  content: '';
+  position: absolute;
+  inset: auto -3rem -3rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(123, 27, 164, 0.18), transparent 70%);
+}
+
 .hero-panel h2 {
   margin-bottom: var(--space-sm);
 }

@@ -1,15 +1,19 @@
 :root {
-  --color-background: #07111f;
-  --color-surface: #101d31;
-  --color-surface-soft: #162740;
-  --color-border: rgba(148, 163, 184, 0.2);
-  --color-text: #e5eef8;
-  --color-text-muted: #a9bdd3;
-  --color-primary: #4fd1c5;
-  --color-primary-strong: #2fb5aa;
-  --color-accent: #8b5cf6;
-  --color-shadow: rgba(7, 17, 31, 0.35);
-  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --color-background: #f2f2f2;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f7f4fb;
+  --color-border: rgba(10, 46, 90, 0.12);
+  --color-text: #0a2e5a;
+  --color-text-strong: #061c36;
+  --color-text-muted: #49607d;
+  --color-primary: #0a2e5a;
+  --color-primary-strong: #071f3d;
+  --color-accent: #7b1ba4;
+  --color-accent-soft: rgba(123, 27, 164, 0.1);
+  --color-highlight: rgba(10, 46, 90, 0.08);
+  --color-shadow: rgba(10, 46, 90, 0.12);
+  --font-heading: "Exo 2", "Segoe UI", Arial, sans-serif;
+  --font-sans: "Montserrat", "Segoe UI", Arial, sans-serif;
   --max-width: 72rem;
   --radius-sm: 0.75rem;
   --radius-md: 1.25rem;
@@ -22,5 +26,5 @@
   --space-xl: 3rem;
   --space-2xl: 4.5rem;
   --space-3xl: 6rem;
-  --shadow-md: 0 24px 60px -28px var(--color-shadow);
+  --shadow-md: 0 24px 60px -32px var(--color-shadow);
 }

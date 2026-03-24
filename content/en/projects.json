@@ -2,22 +2,22 @@
   "locale": "en",
   "slug": "projects",
   "path": "/en/projects/",
-  "title": "Projects | Synnergy Dev",
-  "description": "A dedicated space for projects and case studies built around clear storytelling and business-oriented outcomes.",
-  "heading": "Projects and case studies with a clear narrative",
-  "intro": "This section is prepared to explain context, process, and results in a way that supports trust and positioning.",
+  "title": "Results | Synnergy Lab",
+  "description": "Section reserved for real strategic marketing case studies and business-focused outcomes.",
+  "heading": "Results and cases with business focus",
+  "intro": "This section is ready to hold real cases that demonstrate impact on leads, conversions, inquiries, or positioning.",
   "sections": [
     {
-      "title": "Case studies with context",
-      "body": "Each project can explain the challenge, the approach, the solution, and the outcome."
+      "title": "Context before appearance",
+      "body": "Each case should explain the starting point, business problem, hypothesis, and actions taken."
     },
     {
-      "title": "Consistent presentation system",
-      "body": "The architecture makes it easier to present portfolios, categories, and testimonials consistently."
+      "title": "Useful metrics",
+      "body": "Social proof should prioritize business indicators over attractive but empty outputs."
     },
     {
-      "title": "SEO and trust signals",
-      "body": "Projects can also reinforce topical authority, internal linking, and credibility."
+      "title": "No inflated claims",
+      "body": "Until validated material is available, we avoid inventing outcomes or unsupported promises."
     }
   ]
 }

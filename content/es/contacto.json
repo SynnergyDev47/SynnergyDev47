@@ -2,22 +2,22 @@
   "locale": "es",
   "slug": "contacto",
   "path": "/es/contacto/",
-  "title": "Contacto | Synnergy Dev",
-  "description": "Página de contacto preparada para captar oportunidades relacionadas con marketing, desarrollo web o colaboraciones estratégicas.",
-  "heading": "Abramos una conversación con intención y claridad",
-  "intro": "La estructura está lista para evolucionar hacia un formulario completo, integración con CRM y mensajes por tipo de servicio.",
+  "title": "Contacto | Synnergy Lab",
+  "description": "Contacta con Synnergy Lab para solicitar un diagnóstico estratégico de marketing para tu emprendimiento o mipyme.",
+  "heading": "Hablemos de tu diagnóstico estratégico",
+  "intro": "Si quieres llevar tu emprendimiento a un nivel profesional con nosotros, conversemos sobre tu contexto, objetivos y prioridades.",
   "sections": [
     {
-      "title": "Proyectos web",
-      "body": "Ideal para webs corporativas, landings, portafolios y mejoras de estructura o rendimiento."
+      "title": "Diagnóstico para ordenar",
+      "body": "Ideal para negocios que sienten su marketing disperso y necesitan claridad antes de invertir más."
     },
     {
-      "title": "Marketing y comunicación",
-      "body": "Podemos trabajar la claridad del mensaje, la propuesta de valor y la experiencia de conversión."
+      "title": "Estrategia para crecer",
+      "body": "Pensado para mipymes que buscan una base sólida de posicionamiento, canales y objetivos."
     },
     {
-      "title": "Colaboraciones mixtas",
-      "body": "También hay espacio para alianzas entre agencia, diseño y desarrollo con objetivos compartidos."
+      "title": "Optimización con criterio",
+      "body": "También podemos revisar acciones activas y detectar qué ajustar para mejorar resultados."
     }
   ]
 }
