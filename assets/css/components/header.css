@@ -3,7 +3,7 @@
   top: 0;
   z-index: 20;
   backdrop-filter: blur(16px);
-  background: rgba(242, 242, 242, 0.9);
+  background: var(--header-surface);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -61,13 +61,32 @@
   border: 1px solid var(--color-border);
   border-radius: 999px;
   color: var(--color-text-muted);
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--color-surface-soft);
 }
 
 .language-pill.is-current {
   border-color: rgba(123, 27, 164, 0.3);
   color: var(--color-primary);
   background: var(--color-accent-soft);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-soft);
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--color-accent-soft);
+  color: var(--color-primary);
 }
 
 @media (min-width: 62rem) {

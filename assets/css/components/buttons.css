@@ -33,7 +33,7 @@
 }
 
 .button-secondary {
-  border-color: rgba(123, 27, 164, 0.22);
-  background: rgba(123, 27, 164, 0.06);
+  border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 14%, transparent);
   color: var(--color-accent);
 }
