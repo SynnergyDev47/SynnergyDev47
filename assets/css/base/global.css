@@ -31,7 +31,8 @@ body,
 
 .eyebrow,
 .section-kicker {
-  margin-bottom: var(--space-xs);
+  margin-top: calc(var(--space-2xs) * 0.66);
+  margin-bottom: calc(var(--space-xs) * 0.66);
   color: var(--color-accent);
   font-size: 0.9rem;
   font-weight: 700;
@@ -50,6 +51,7 @@ h3,
 
 h1 {
   font-size: clamp(1.9rem, 4vw, 3.55rem);
+  margin-top: calc(var(--space-md) * 0.66);
 }
 
 h2 {
