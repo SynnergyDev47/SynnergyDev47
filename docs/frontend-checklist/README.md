@@ -60,7 +60,7 @@ La lógica es simple:
 - [ ] Qué te gusta de cada referencia.
 - [ ] Qué no quieres replicar.
 - [ ] Sensación buscada: premium, sobria, creativa, tecnológica, estratégica, cercana, etc.
-- [ ] Qué debe tener más peso visual: agencia, marca personal, desarrollo web o mezcla concreta.
+- [ ] Qué debe tener más peso visual: agencia, marca personal, servicios complementarios o mezcla concreta.
 - [ ] Preferencias concretas para móvil.
 - [ ] Preferencias concretas para escritorio.
 
@@ -159,7 +159,7 @@ Por cada proyecto:
 
 ---
 
-## 8. Sobre mí / perfil profesional
+## 8. Enfoque / presentación de la agencia
 
 - [ ] Nombre real.
 - [ ] Cargo o descriptor profesional.
@@ -394,6 +394,6 @@ El mejor siguiente paso es que me compartas primero este paquete mínimo:
 7. 2 o 3 proyectos reales;
 8. email, redes y CTA principal;
 9. 2 o 3 referencias visuales;
-10. una explicación breve de si debe pesar más la **agencia**, la **marca personal**, el **desarrollo web** o una mezcla concreta.
+10. una explicación breve de si debe pesar más la **agencia**, la **marca personal**, el **servicios complementarios** o una mezcla concreta.
 
 Con eso ya se puede empezar una primera ronda realista de ajustes visuales y estructurales en el frontend.

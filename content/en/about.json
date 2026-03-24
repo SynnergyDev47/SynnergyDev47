@@ -2,22 +2,22 @@
   "locale": "en",
   "slug": "about",
   "path": "/en/about/",
-  "title": "About | Synnergy Dev",
-  "description": "Professional profile focused on connecting marketing, communication, and web development for brands with business goals.",
-  "heading": "A professional profile with strategic and technical perspective",
-  "intro": "This page links the human side of the project with digital execution and a clear value proposition.",
+  "title": "Approach | Synnergy Lab",
+  "description": "Page explaining how Synnergy Lab works as a strategic marketing agency.",
+  "heading": "How Synnergy Lab works",
+  "intro": "This page summarizes the agency's operating logic: diagnosis, strategic direction, orderly execution, and continuous optimization.",
   "sections": [
     {
-      "title": "Hybrid mindset",
-      "body": "The offer combines strategic thinking, digital design, and development to avoid disconnected websites."
+      "title": "Diagnose before acting",
+      "body": "We first understand the business, market, and value proposition to avoid reactive decisions."
     },
     {
-      "title": "Clear communication",
-      "body": "Every deliverable aims to organize the brand narrative and translate it into a useful web experience."
+      "title": "Build a system",
+      "body": "We define a clear structure of audiences, channels, goals, and messages to support growth."
     },
     {
-      "title": "Long-term growth",
-      "body": "The project structure is prepared to evolve with new pages, languages, and content assets."
+      "title": "Measure to improve",
+      "body": "Execution only matters when it is supported by strategic reading and continuous adjustments."
     }
   ]
 }

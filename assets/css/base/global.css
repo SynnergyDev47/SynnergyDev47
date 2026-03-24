@@ -1,8 +1,8 @@
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(79, 209, 197, 0.16), transparent 32%),
-    linear-gradient(180deg, #07111f 0%, #0b1424 100%);
+    radial-gradient(circle at top right, rgba(123, 27, 164, 0.12), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f2f2f2 55%, #ede8f5 100%);
   color: var(--color-text);
   font-family: var(--font-sans);
   line-height: 1.6;
@@ -23,8 +23,8 @@ main {
   top: -3rem;
   padding: 0.75rem 1rem;
   border-radius: var(--radius-sm);
-  background: var(--color-primary);
-  color: #04111b;
+  background: var(--color-accent);
+  color: #ffffff;
   z-index: 1000;
 }
 
@@ -35,7 +35,7 @@ main {
 .eyebrow,
 .section-kicker {
   margin-bottom: var(--space-xs);
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -44,12 +44,15 @@ main {
 
 h1,
 h2,
-h3 {
-  line-height: 1.15;
+h3,
+.brand-mark {
+  font-family: var(--font-heading);
+  line-height: 1.12;
+  color: var(--color-text-strong);
 }
 
 h1 {
-  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  font-size: clamp(2.4rem, 5vw, 4.75rem);
 }
 
 h2 {
@@ -64,7 +67,12 @@ small {
 
 .lead {
   max-width: 42rem;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.02rem, 2vw, 1.18rem);
+}
+
+strong,
+code {
+  color: var(--color-text-strong);
 }
 
 .content-section {

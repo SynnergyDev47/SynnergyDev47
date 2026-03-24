@@ -2,22 +2,22 @@
   "locale": "es",
   "slug": "agencia",
   "path": "/es/agencia/",
-  "title": "Agencia | Synnergy Dev",
-  "description": "Visión de agencia orientada a unir estrategia, identidad digital, contenido y desarrollo web dentro de una misma propuesta.",
-  "heading": "Una agencia digital construida sobre coherencia y enfoque",
-  "intro": "La web presenta una narrativa de agencia que puede convivir con servicios propios, colaboraciones y proyectos freelance.",
+  "title": "Agencia | Synnergy Lab",
+  "description": "Synnergy Lab es una agencia de marketing estratégico que trabaja con método, datos y foco en crecimiento real para mipymes.",
+  "heading": "Una sola agencia, una sola dirección estratégica",
+  "intro": "Synnergy Lab se presenta como una entidad de agencia enfocada en construir sistemas de marketing estructurados, medibles y orientados a resultados.",
   "sections": [
     {
-      "title": "Identidad unificada",
-      "body": "El sitio se diseña como un ecosistema de marca, no como una suma de páginas inconexas."
+      "title": "Método antes que ocurrencias",
+      "body": "Priorizamos claridad estratégica, análisis y estructura para que el marketing no dependa de intuiciones sueltas."
     },
     {
-      "title": "Escalabilidad operativa",
-      "body": "La nueva organización por idioma y por rutas deja lista la base para ampliar contenidos y servicios."
+      "title": "Lenguaje de negocio",
+      "body": "Hablamos de posicionamiento, demanda, conversiones y optimización; no de marketing decorativo."
     },
     {
-      "title": "Posicionamiento sólido",
-      "body": "La combinación de estructura semántica, URLs claras y contenido localizado ayuda a preparar un SEO más serio."
+      "title": "Relación profesional",
+      "body": "El acompañamiento está diseñado para mipymes que quieren un socio con rigor, foco y continuidad."
     }
   ]
 }

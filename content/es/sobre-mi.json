@@ -2,22 +2,22 @@
   "locale": "es",
   "slug": "sobre-mi",
   "path": "/es/sobre-mi/",
-  "title": "Sobre mí | Synnergy Dev",
-  "description": "Perfil profesional centrado en unir marketing, comunicación y desarrollo web para proyectos con visión de negocio.",
-  "heading": "Perfil profesional con visión estratégica y técnica",
-  "intro": "Esta página conecta el lado humano del proyecto con la capacidad de ejecución digital y la propuesta de valor.",
+  "title": "Enfoque | Synnergy Lab",
+  "description": "Página de enfoque para explicar cómo trabaja Synnergy Lab como agencia de marketing estratégico para mipymes.",
+  "heading": "Cómo trabaja Synnergy Lab",
+  "intro": "Esta página resume el criterio de trabajo de la agencia: diagnóstico, dirección estratégica, ejecución con orden y optimización continua.",
   "sections": [
     {
-      "title": "Enfoque híbrido",
-      "body": "La propuesta une pensamiento estratégico, diseño digital y desarrollo para evitar webs desconectadas del negocio."
+      "title": "Diagnosticar antes de actuar",
+      "body": "Primero entendemos negocio, mercado y propuesta de valor para evitar decisiones impulsivas."
     },
     {
-      "title": "Comunicación clara",
-      "body": "Cada entrega busca ordenar la narrativa de la marca y traducirla en una experiencia web útil y profesional."
+      "title": "Construir un sistema",
+      "body": "Definimos una estructura clara de audiencias, canales, objetivos y mensajes para sostener el crecimiento."
     },
     {
-      "title": "Relación a largo plazo",
-      "body": "La estructura del proyecto se plantea para evolucionar con nuevas páginas, idiomas y activos de contenido."
+      "title": "Medir para mejorar",
+      "body": "La ejecución solo tiene sentido si se acompaña de lectura estratégica y ajustes continuos."
     }
   ]
 }

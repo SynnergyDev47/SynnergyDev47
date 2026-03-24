@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: center;
   min-height: 2.9rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.85rem 1.3rem;
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 700;
-  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
 .button:hover,
@@ -23,17 +23,17 @@
 }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--color-primary), #63e0d5);
-  color: #04111b;
+  background: linear-gradient(135deg, var(--color-primary), #123f78);
+  color: #ffffff;
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: linear-gradient(135deg, #67ddd2, #8ce9df);
+  background: linear-gradient(135deg, #123f78, #1a4e8f);
 }
 
 .button-secondary {
-  border-color: var(--color-border);
-  background: rgba(255, 255, 255, 0.02);
-  color: var(--color-text);
+  border-color: rgba(123, 27, 164, 0.22);
+  background: rgba(123, 27, 164, 0.06);
+  color: var(--color-accent);
 }
