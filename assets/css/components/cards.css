@@ -2,7 +2,8 @@
   padding: var(--space-lg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 244, 251, 0.98));
+  background: var(--glass-surface);
+  backdrop-filter: blur(16px);
   box-shadow: var(--shadow-md);
 }
 
