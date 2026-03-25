@@ -15,6 +15,10 @@
   max-width: 48rem;
 }
 
+.site-footer p {
+  font-size: 0.95rem;
+}
+
 @media (min-width: 48rem) {
   .site-footer__inner {
     flex-direction: row;

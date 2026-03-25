@@ -18,7 +18,7 @@ main {
 body,
 .site-header,
 .card,
-.language-pill,
+.language-toggle,
 .button-secondary,
 .theme-toggle {
   transition:
