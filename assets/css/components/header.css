@@ -17,10 +17,27 @@
 }
 
 .brand-mark {
+  display: inline-flex;
+  align-items: center;
   color: var(--color-primary);
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: clamp(1.8rem, 4vw, 2.25rem);
+}
+
+.brand-logo--dark {
+  display: none;
+}
+
+:root[data-theme='dark'] .brand-logo--light {
+  display: none;
+}
+
+:root[data-theme='dark'] .brand-logo--dark {
+  display: block;
 }
 
 .site-nav {
@@ -64,10 +81,6 @@
 
   .site-header .container.site-header__inner {
     width: min(calc(100% - 1rem), var(--max-width));
-  }
-
-  .brand-mark {
-    font-size: clamp(1rem, 4.2vw, 1.15rem);
   }
 
   .language-switcher {
