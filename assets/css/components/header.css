@@ -67,14 +67,13 @@
   }
 
   .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: clamp(0.03rem, 0.25vw, 0.07rem);
-    row-gap: clamp(0.16rem, 0.9vw, 0.32rem);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: clamp(0.02rem, 0.2vw, 0.06rem);
   }
 
   .nav-list > li {
-    flex: 1 1 calc(33.333% - 0.1rem);
+    flex: 1 1 0;
   }
 
   .nav-link {
