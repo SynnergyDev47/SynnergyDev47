@@ -57,6 +57,32 @@
   transition: background-color 180ms ease, color 180ms ease;
 }
 
+@media (max-width: 30rem) {
+  .site-header__inner {
+    padding: 0.8rem 0;
+  }
+
+  .site-header .container.site-header__inner {
+    width: min(calc(100% - 1rem), var(--max-width));
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: clamp(0.03rem, 0.25vw, 0.07rem);
+    row-gap: clamp(0.16rem, 0.9vw, 0.32rem);
+  }
+
+  .nav-list > li {
+    flex: 1 1 calc(33.333% - 0.1rem);
+  }
+
+  .nav-link {
+    padding: 0.38rem clamp(0.08rem, 0.55vw, 0.24rem) 0.3rem;
+    font-size: clamp(0.78rem, 3.1vw, 0.95rem);
+  }
+}
+
 .nav-link:hover,
 .nav-link:focus-visible,
 .nav-link.is-active {
