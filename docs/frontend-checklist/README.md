@@ -23,8 +23,7 @@ La lógica es simple:
 ## 1. Identidad visual
 
 ### Marca base
-- [ ] Nombre oficial de la marca.
-- [ ] Variante corta del nombre para navbar, footer o favicon.
+- [x] Nombre oficial de la marca.
 - [ ] Tagline o descriptor principal.
 - [ ] Propuesta de valor en una frase.
 - [ ] Tono de marca en 3 a 5 adjetivos.
@@ -70,7 +69,6 @@ La lógica es simple:
 
 Ahora mismo el sitio sugiere una marca híbrida entre agencia y perfil profesional. Para ajustar bien el frontend, conviene concretar esto.
 
-- [ ] La marca se presenta como una sola entidad o como dos líneas de servicio.
 - [ ] Qué debe entender un visitante en los primeros 5 segundos.
 - [ ] Servicio principal que quieres vender ahora.
 - [ ] Servicio secundario o complementario.
@@ -283,10 +281,10 @@ Además:
 
 Si quieres pasarme solo lo imprescindible en una primera ronda, con esto ya puedo comenzar a ajustar el frontend con bastante criterio:
 
-- [ ] Colores reales.
-- [ ] Tipografías reales.
-- [ ] Logo.
-- [ ] Menú definitivo.
+- [x] Colores reales.
+- [x] Tipografías reales.
+- [x] Logo.
+- [x] Menú definitivo.
 - [ ] H1 y subtítulo reales de la home.
 - [ ] CTA principal.
 - [ ] 3 servicios reales.
@@ -334,12 +332,6 @@ Una carpeta con:
 - Público objetivo:
 - Prioridad del sitio:
 
-# Identidad visual
-- Colores:
-- Tipografías:
-- Logo:
-- Referencias:
-
 # Navegación
 - Menú principal:
 - CTA principal:
@@ -347,7 +339,7 @@ Una carpeta con:
 
 # Home
 - H1:
-- Subtítulo:
+- Subtítulo: 
 - Beneficios clave:
 - Secciones que quieres mostrar:
 
@@ -369,9 +361,9 @@ Una carpeta con:
 2.
 
 # Contacto
-- Email:
-- WhatsApp:
-- Ubicación:
+- Email: synnergydev@gmail.com
+- WhatsApp: +53 55172713
+- Ubicación: Cuba
 - Redes:
 
 # Idiomas
