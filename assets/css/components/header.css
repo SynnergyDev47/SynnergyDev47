@@ -19,6 +19,7 @@
 .brand-mark {
   display: inline-flex;
   align-items: center;
+  gap: clamp(0.35rem, 1.4vw, 0.6rem);
   color: var(--color-primary);
 }
 
@@ -26,6 +27,13 @@
   display: block;
   width: auto;
   height: clamp(1.8rem, 4vw, 2.25rem);
+}
+
+.brand-text {
+  font-size: clamp(0.92rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .brand-logo--dark {
@@ -50,24 +58,23 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: clamp(0.04rem, 0.225vw, 0.1rem);
+  gap: clamp(0.02rem, 0.18vw, 0.08rem);
   width: 100%;
 }
 
 .nav-list > li {
-  flex: 1 1 0;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
 .nav-link {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   white-space: nowrap;
   width: 100%;
-  padding: clamp(0.4rem, 1.35vw, 0.72rem) clamp(0.2rem, 0.55vw, 0.45rem)
-    clamp(0.26rem, 0.9vw, 0.48rem);
-  font-size: clamp(0.85rem, 2.6vw, 1.31rem);
+  padding: clamp(0.36rem, 1.15vw, 0.62rem) clamp(0.12rem, 0.5vw, 0.32rem);
+  font-size: clamp(0.82rem, 2.3vw, 1.12rem);
   line-height: 1.1;
   border-radius: 999px;
   color: var(--color-text-muted);
@@ -83,23 +90,20 @@
     width: min(calc(100% - 1rem), var(--max-width));
   }
 
+  .brand-text {
+    font-size: clamp(0.82rem, 2.6vw, 0.95rem);
+  }
+
   .language-switcher {
     gap: 0.3rem;
   }
 
   .nav-list {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: clamp(0.02rem, 0.2vw, 0.06rem);
-  }
-
-  .nav-list > li {
-    flex: 1 1 0;
+    gap: 0;
   }
 
   .nav-link {
-    padding: 0.38rem clamp(0.08rem, 0.55vw, 0.24rem) 0.3rem;
-    font-size: clamp(0.78rem, 3.1vw, 0.95rem);
+    padding: 0.34rem clamp(0.06rem, 0.32vw, 0.14rem);
   }
 }
 
