@@ -1,3 +1,7 @@
+/*
+ * Tarjeta visual genérica usada en bloques de contenido:
+ * servicios, panel lateral del hero y secciones internas.
+ */
 .card {
   padding: var(--space-lg);
   border: 1px solid var(--color-border);
@@ -7,6 +11,7 @@
   box-shadow: var(--shadow-md);
 }
 
+/* Ajuste de separación para títulos dentro de tarjetas de contenido. */
 .content-card h2 {
   margin-bottom: var(--space-xs);
 }

@@ -1,3 +1,4 @@
+/* Estilos globales del documento y ritmo tipográfico general. */
 body {
   min-height: 100vh;
   background: var(--body-gradient);
@@ -6,15 +7,18 @@ body {
   line-height: 1.6;
 }
 
+/* Asegura comportamiento consistente de <main> entre navegadores. */
 main {
   display: block;
 }
 
+/* Contenedor de ancho máximo reutilizable en secciones principales. */
 .container {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
 }
 
+/* Transiciones suaves para cambios de tema y estados visuales. */
 body,
 .site-header,
 .card,
@@ -29,6 +33,7 @@ body,
     box-shadow 220ms ease;
 }
 
+/* Etiquetas tipo "kicker" que anteceden títulos de sección. */
 .eyebrow,
 .section-kicker {
   margin-top: calc(var(--space-2xs) * 0.66);
@@ -40,6 +45,7 @@ body,
   text-transform: uppercase;
 }
 
+/* Tipografía de titulares principales y marca. */
 h1,
 h2,
 h3,
@@ -49,44 +55,53 @@ h3,
   color: var(--color-text-strong);
 }
 
+/* Escalado responsivo del H1 para secciones hero. */
 h1 {
   font-size: clamp(1.9rem, 4vw, 3.55rem);
   margin-top: calc(var(--space-md) * 0.66);
 }
 
+/* Tamaño estándar de subtítulos de sección. */
 h2 {
   font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
 
+/* Color de lectura secundario para texto corrido y listas. */
 p,
 li,
 small {
   color: var(--color-text-muted);
 }
 
+/* Clase utilitaria para párrafos introductorios destacados. */
 .lead {
   max-width: 42rem;
   font-size: clamp(1.02rem, 2vw, 1.18rem);
 }
 
+/* Resalta elementos semánticos de énfasis y código inline. */
 strong,
 code {
   color: var(--color-text-strong);
 }
 
+/* Espaciado vertical base de bloques de contenido entre secciones. */
 .content-section {
   padding: 0 0 var(--space-3xl);
 }
 
+/* Separación entre encabezado de sección y su contenido. */
 .section-heading {
   margin-bottom: var(--space-lg);
 }
 
+/* Grid base de tarjetas para servicios/portafolio. */
 .card-grid {
   display: grid;
   gap: var(--space-md);
 }
 
+/* A partir de tablet, muestra 3 columnas uniformes. */
 @media (min-width: 48rem) {
   .card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));

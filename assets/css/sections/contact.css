@@ -1,3 +1,4 @@
+/* Ajuste de espaciado final para la sección de contacto en páginas internas. */
 .page-inner .content-section {
   padding-bottom: var(--space-2xl);
 }

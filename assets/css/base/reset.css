@@ -1,13 +1,16 @@
+/* Reset universal de caja para simplificar layouts. */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Scroll suave al navegar a anclas internas (#id). */
 html {
   scroll-behavior: smooth;
 }
 
+/* Elimina márgenes por defecto de elementos comunes de contenido. */
 body,
 h1,
 h2,
@@ -17,21 +20,25 @@ ul {
   margin: 0;
 }
 
+/* Normaliza listas para menus y bloques customizados. */
 ul {
   padding: 0;
   list-style: none;
 }
 
+/* Hereda color de texto y elimina subrayado por defecto en links. */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Imágenes responsivas sin espacios extra de inline layout. */
 img {
   display: block;
   max-width: 100%;
 }
 
+/* Uniformiza tipografía de controles de formulario con el resto del sitio. */
 button,
 input,
 textarea,

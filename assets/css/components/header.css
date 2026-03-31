@@ -1,3 +1,7 @@
+/*
+ * Cabecera principal del sitio.
+ * Aplica al bloque <header class="site-header"> con logo, navegación e interruptores.
+ */
 .site-header {
   position: sticky;
   top: 0;
@@ -7,6 +11,7 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Distribución general de elementos internos del header. */
 .site-header__inner {
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +21,7 @@
   padding: 1rem 0;
 }
 
+/* Marca principal (enlace con logo + texto). */
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -23,12 +29,14 @@
   color: var(--color-primary);
 }
 
+/* Tamaño responsivo del logo SVG/imagen de marca. */
 .brand-logo {
   display: block;
   width: auto;
   height: clamp(1.8rem, 4vw, 2.25rem);
 }
 
+/* Tipografía del nombre de marca junto al logo. */
 .brand-text {
   font-size: clamp(0.92rem, 2.2vw, 1.1rem);
   font-weight: 700;
@@ -36,10 +44,12 @@
   white-space: nowrap;
 }
 
+/* Por defecto solo se muestra la versión clara del logo. */
 .brand-logo--dark {
   display: none;
 }
 
+/* En tema oscuro se intercambian variantes de logo. */
 :root[data-theme='dark'] .brand-logo--light {
   display: none;
 }
@@ -48,12 +58,14 @@
   display: block;
 }
 
+/* Navegación ocupa todo el ancho en pantallas pequeñas. */
 .site-nav {
   order: 2;
   flex: 0 0 100%;
   min-width: 100%;
 }
 
+/* Lista de enlaces de menú horizontal y compacta. */
 .nav-list {
   display: flex;
   flex-wrap: nowrap;
@@ -62,11 +74,13 @@
   width: 100%;
 }
 
+/* Cada item de menú puede encogerse sin romper layout. */
 .nav-list > li {
   flex: 1 1 auto;
   min-width: 0;
 }
 
+/* Estilo base de enlaces de navegación (<a class="nav-link">). */
 .nav-link {
   display: flex;
   align-items: center;
@@ -81,6 +95,7 @@
   transition: background-color 180ms ease, color 180ms ease;
 }
 
+/* Ajustes extra compactos para móviles muy pequeños. */
 @media (max-width: 30rem) {
   .site-header__inner {
     padding: 0.8rem 0;
@@ -107,6 +122,7 @@
   }
 }
 
+/* Estado hover/focus y estado activo de la ruta actual. */
 .nav-link:hover,
 .nav-link:focus-visible,
 .nav-link.is-active {
@@ -114,6 +130,7 @@
   color: var(--color-primary);
 }
 
+/* Grupo de controles de idioma y tema. */
 .language-switcher {
   margin-inline-start: auto;
   display: inline-flex;
@@ -123,6 +140,7 @@
   gap: 0.4rem;
 }
 
+/* Botones circulares para alternar idioma y tema. */
 .language-toggle,
 .theme-toggle {
   display: inline-flex;
@@ -139,6 +157,7 @@
   line-height: 1;
 }
 
+/* Feedback visual en interacción de toggles. */
 .language-toggle:hover,
 .language-toggle:focus-visible,
 .theme-toggle:hover,
@@ -147,6 +166,7 @@
   color: var(--color-primary);
 }
 
+/* En desktop: navegación centrada y header en una sola línea. */
 @media (min-width: 62rem) {
   .site-header__inner {
     flex-wrap: nowrap;

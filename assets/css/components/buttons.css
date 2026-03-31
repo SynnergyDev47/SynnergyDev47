@@ -1,3 +1,4 @@
+/* Contenedor para agrupar CTAs y botones secundarios en filas flexibles. */
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +6,7 @@
   margin-top: var(--space-lg);
 }
 
+/* Estilo base reutilizable para cualquier botón con clase .button. */
 .button {
   display: inline-flex;
   align-items: center;
@@ -17,27 +19,32 @@
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
+/* Retroalimentación visual al interactuar con teclado o mouse. */
 .button:hover,
 .button:focus-visible {
   transform: translateY(-1px);
 }
 
+/* Variante principal para acciones prioritarias (ej. enviar o contratar). */
 .button-primary {
   background: var(--color-primary);
   color: #ffffff;
 }
 
+/* Oscurece ligeramente el botón principal al interactuar. */
 .button-primary:hover,
 .button-primary:focus-visible {
   background: color-mix(in srgb, var(--color-primary) 88%, black);
 }
 
+/* Variante secundaria para acciones de soporte o navegación auxiliar. */
 .button-secondary {
   border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
   background: color-mix(in srgb, var(--color-accent) 14%, transparent);
   color: var(--color-accent);
 }
 
+/* Ajustes de contraste de botones para tema oscuro. */
 :root[data-theme='dark'] .button-primary {
   background: var(--syn-purple);
   color: #ffffff;

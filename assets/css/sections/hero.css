@@ -1,23 +1,28 @@
+/* Bloque principal hero: controla separación vertical inicial de la portada. */
 .hero-section {
   padding: calc(var(--space-2xl) * 0.66) 0 var(--space-2xl);
 }
 
+/* Grid del hero con contenido textual y panel lateral. */
 .hero-grid {
   display: grid;
   gap: var(--space-lg);
   align-items: start;
 }
 
+/* Agrupa y espacia elementos internos del texto del hero. */
 .hero-copy {
   display: grid;
   gap: var(--space-md);
 }
 
+/* Contenedor de tarjeta/panel de apoyo dentro del hero. */
 .hero-panel {
   position: relative;
   overflow: hidden;
 }
 
+/* Decoración radial sutil en la esquina inferior derecha del panel. */
 .hero-panel::after {
   content: '';
   position: absolute;
@@ -28,20 +33,24 @@
   background: radial-gradient(circle, rgba(123, 27, 164, 0.18), transparent 70%);
 }
 
+/* Espaciado del subtítulo dentro del panel hero. */
 .hero-panel h2 {
   margin-bottom: var(--space-sm);
 }
 
+/* Lista de características destacadas en formato de pila. */
 .feature-list {
   display: grid;
   gap: 0.75rem;
 }
 
+/* Reserva espacio para viñeta custom en cada item. */
 .feature-list li {
   position: relative;
   padding-left: 1.25rem;
 }
 
+/* Viñeta gradiente vinculada visualmente al branding del sitio. */
 .feature-list li::before {
   content: '';
   position: absolute;
@@ -53,6 +62,7 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
 }
 
+/* En desktop, define proporción entre columnas del hero. */
 @media (min-width: 62rem) {
   .hero-grid {
     grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.85fr);

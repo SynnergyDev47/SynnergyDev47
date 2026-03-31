@@ -1,3 +1,7 @@
+/*
+ * Tokens de diseño globales (colores, tipografías, radios, espacios y sombras).
+ * Se consumen en todos los módulos CSS vía var(--token).
+ */
 :root {
   --syn-dark-blue: #0a2e5a;
   --syn-purple: #7b1ba4;
@@ -37,6 +41,10 @@
   --shadow-md: 0 24px 60px -32px var(--color-shadow);
 }
 
+/*
+ * Sobrescritura de tokens para modo oscuro.
+ * Se activa al establecer data-theme="dark" en :root.
+ */
 :root[data-theme='dark'] {
   --color-background: #071d3a;
   --color-surface: rgba(14, 39, 72, 0.75);
