@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Comentario estructural: Este bloque concentra metadatos SEO, accesibilidad y recursos compartidos que usa esta página y que se coordinan con el resto de rutas del sitio. -->
+    <!-- Define codificación y viewport para garantizar renderizado correcto y consistente en todos los idiomas y secciones. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- El título y la descripción se adaptan a la ruta actual y mantienen coherencia semántica con la navegación interna. -->
     <title>Contact | Synnergy Lab</title>
     <meta name="description" content="Contact Synnergy Lab to request a strategic marketing diagnosis for your business." />
+    <!-- Canonical y hreflang conectan esta URL con sus equivalentes en español/inglés, evitando contenido duplicado y guiando buscadores. -->
     <link rel="canonical" href="/en/contact/" />
     <link rel="alternate" hreflang="es" href="/es/contacto/" />
     <link rel="alternate" hreflang="en" href="/en/contact/" />
     <link rel="alternate" hreflang="x-default" href="/es/" />
+    <!-- Hoja de estilos global: enlaza con la misma base visual usada por todos los HTML para mantener una identidad unificada. -->
     <link rel="stylesheet" href="../../assets/css/main.css" />
   </head>
+  <!-- El cuerpo define el contexto de página (home o interior) que aprovechan los estilos y scripts compartidos. -->
   <body class="page-inner">
+    <!-- Encabezado reutilizable: conecta marca, navegación principal y cambio de idioma con la arquitectura completa del sitio. -->
     <header class="site-header">
       <div class="container site-header__inner">
+        <!-- Bloque de marca: enlaza al inicio de idioma actual y muestra logotipos para temas claro/oscuro definidos en CSS global. -->
         <a class="brand-mark" href="/en/" aria-label="Synnergy Lab, home">
           <img class="brand-logo brand-logo--light" src="../../assets/img/branding/synnergy-lab-logo-color.png" alt="Synnergy Lab" />
           <img class="brand-logo brand-logo--dark" src="../../assets/img/branding/synnergy-lab-logo-white.png" alt="Synnergy Lab" />
           <span class="brand-text">Synnergy Lab</span>
         </a>
+        <!-- Navegación primaria: relaciona esta página con las demás secciones del mismo idioma y marca el flujo principal del usuario. -->
         <nav class="site-nav" aria-label="Main navigation">
           <ul class="nav-list">
             <li><a class="nav-link" href="/en/services/">Services</a></li>
@@ -28,24 +37,30 @@
             <li><a class="nav-link is-active" href="/en/contact/">Contact</a></li>
           </ul>
         </nav>
+        <!-- Selector de idioma: enlaza la contraparte equivalente en la otra versión lingüística para mantener paridad de contenidos. -->
         <div class="language-switcher" aria-label="Language switcher">
           <a class="language-toggle" href="/es/contacto/" lang="es" aria-label="Cambiar a español" title="Cambiar a español">ES</a>
         </div>
       </div>
     </header>
 
+    <!-- Contenido principal: agrupa bloques funcionales de valor (hero + contenido) y sirve como referencia para accesibilidad. -->
     <main id="main-content">
+      <!-- Hero: presenta la propuesta central de la ruta actual y orienta al usuario hacia acciones prioritarias mediante CTAs. -->
       <section class="hero-section">
         <div class="container hero-grid">
+          <!-- Mensaje principal del hero: título, contexto y narrativa alineada con el objetivo de esta página dentro del embudo. -->
           <div class="hero-copy">
             <h1>Let us discuss your strategic diagnosis</h1>
             <p class="eyebrow">Primary CTA</p>
             <p class="lead">If you want to take your business to a more professional level with us, let us talk about your context, goals, and priorities.</p>
+            <!-- Acciones clave: conectan con rutas internas estratégicas (contacto, servicios, proyectos, etc.) para sostener la navegación. -->
             <div class="button-row">
               <a class="button button-primary" href="mailto:synnergydev@gmail.com">Send an email</a>
               <a class="button button-secondary" href="/en/services/">View services</a>
             </div>
           </div>
+          <!-- Panel complementario del hero: resume beneficios/cobertura y refuerza lo expuesto en el bloque principal. -->
           <aside class="hero-panel card">
             <h2>Contact channel</h2>
             <ul class="feature-list">
@@ -57,20 +72,26 @@
         </div>
       </section>
 
+      <!-- Sección de desarrollo: profundiza lo prometido en el hero con bloques modulares que mantienen el mismo sistema visual. -->
       <section class="content-section">
+        <!-- Encabezado de sección: introduce el tema del bloque de tarjetas para que el contenido conserve jerarquía semántica. -->
         <div class="container section-heading">
           <p class="section-kicker">When to reach out</p>
           <h2>Situations where Synnergy Lab can help you move forward with more clarity</h2>
         </div>
+        <!-- Rejilla de tarjetas: estructura información en unidades paralelas para facilitar lectura, comparación y escalabilidad. -->
         <div class="container card-grid">
+          <!-- Tarjeta de contenido 1: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
           <article class="card content-card">
             <h2>Scattered marketing</h2>
             <p>When your business is doing isolated actions without a clear strategic direction.</p>
           </article>
+          <!-- Tarjeta de contenido 2: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
           <article class="card content-card">
             <h2>Need for professionalization</h2>
             <p>When you understand the value of marketing but need structure, priorities, and criteria to grow.</p>
           </article>
+          <!-- Tarjeta de contenido 3: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
           <article class="card content-card">
             <h2>Optimization of active efforts</h2>
             <p>When you want to review what is already running and make better decisions based on useful metrics.</p>
@@ -79,6 +100,7 @@
       </section>
     </main>
 
+    <!-- Pie de página global: cierra la página con mensaje institucional y año dinámico sincronizado por JavaScript compartido. -->
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <p>Write to us to review your current situation and define the next step with better criteria.</p>
@@ -86,6 +108,7 @@
       </div>
     </footer>
 
+    <!-- Script común: inicializa comportamientos globales (por ejemplo, año actual y módulos UI) para todos los documentos. -->
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>
