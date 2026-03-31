@@ -1,3 +1,4 @@
+/* Hace que cada tarjeta del portafolio ocupe toda la altura de su celda grid. */
 .content-card {
   min-height: 100%;
 }

@@ -1,3 +1,8 @@
+/*
+ * Hoja de estilos principal.
+ * Carga fuentes y módulos CSS en el orden base -> componentes -> secciones
+ * para mantener la cascada predecible.
+ */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('./base/reset.css');
 @import url('./base/variables.css');

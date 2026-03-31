@@ -1,8 +1,10 @@
+/* Contenedor principal del footer del sitio (<footer class="site-footer">). */
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--footer-surface);
 }
 
+/* Layout interno del footer: columna en móvil, fila en escritorio. */
 .site-footer__inner {
   display: flex;
   flex-direction: column;
@@ -10,15 +12,18 @@
   padding: var(--space-lg) 0 var(--space-xl);
 }
 
+/* Controla ancho de lectura para texto legal y descriptivo del footer. */
 .site-footer p,
 .site-footer small {
   max-width: 48rem;
 }
 
+/* Jerarquía tipográfica para el párrafo principal del pie de página. */
 .site-footer p {
   font-size: 0.95rem;
 }
 
+/* En pantallas amplias alinea marca y legal en línea horizontal. */
 @media (min-width: 48rem) {
   .site-footer__inner {
     flex-direction: row;

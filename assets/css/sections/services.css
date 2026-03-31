@@ -1,3 +1,4 @@
+/* Reduce padding superior del hero cuando se reutiliza dentro de páginas internas. */
 .page-inner .hero-section {
   padding-top: var(--space-xl);
 }
