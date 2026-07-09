@@ -7,7 +7,6 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--glass-surface);
-  backdrop-filter: blur(16px);
   box-shadow: var(--shadow-md);
 }
 

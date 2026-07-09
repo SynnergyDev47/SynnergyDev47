@@ -131,12 +131,18 @@ code {
   }
 }
 
-/* En dispositivos táctiles desactivamos el hover 3D de las cards
-   para evitar el estado "elevado permanente" al tocar. */
+/* En dispositivos táctiles desactivamos el borde animado de las cards
+   y botones para evitar el estado permanente al tocar. */
 @media (hover: none) {
-  .card:hover {
-    transform: none;
+  .card:hover,
+  .button:hover {
     box-shadow: var(--shadow-md);
     border-color: var(--color-border);
+  }
+
+  .card:hover::before,
+  .button:hover::before {
+    opacity: 0;
+    animation: none;
   }
 }
