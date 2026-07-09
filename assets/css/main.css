@@ -149,6 +149,7 @@ main {
 /* Transiciones globales fluidas */
 body,
 .site-header,
+.card,
 .language-toggle,
 .button-secondary,
 .theme-toggle {
@@ -610,7 +611,6 @@ code {
 }
 
 .button {
-  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -621,50 +621,29 @@ code {
   font-weight: 700;
   cursor: pointer;
   outline: none;
+  /* Animación elástica premium */
   transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     background-color 0.3s ease,
     border-color 0.3s ease,
     color 0.3s ease,
     box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
 }
 
-/* Pseudo-elemento: borde animado con gradiente giratorio en botones */
-.button::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  padding: 4px;
-  background: conic-gradient(
-    from var(--glow-border-angle),
-    transparent 0%,
-    var(--syn-dark-blue) 8%,
-    var(--syn-purple) 18%,
-    color-mix(in srgb, var(--syn-purple) 60%, white) 25%,
-    transparent 35%
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-
-/* Hover: solo en desktop (puntero fino) */
+/* En touch: sin hover, solo active */
 @media (hover: hover) {
-  .button:hover::before,
-  .button:focus-visible::before {
-    opacity: 1;
-    animation: glow-border-spin 2.8s linear infinite;
+
+  .button:hover,
+  .button:focus-visible {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 24px -10px var(--color-shadow);
   }
 }
 
-.button:focus-visible::before {
-  opacity: 1;
-  animation: glow-border-spin 2.8s linear infinite;
+.button:focus-visible {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 24px -10px var(--color-shadow);
 }
 
 .button:active {
@@ -676,15 +655,52 @@ code {
   color: #ffffff;
 }
 
+@media (hover: hover) {
+
+  .button-primary:hover,
+  .button-primary:focus-visible {
+    background: color-mix(in srgb, var(--color-primary) 88%, black);
+    box-shadow: 0 12px 30px -8px color-mix(in srgb, var(--color-primary) 40%, transparent);
+  }
+}
+
+.button-primary:focus-visible {
+  background: color-mix(in srgb, var(--color-primary) 88%, black);
+  box-shadow: 0 12px 30px -8px color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+
 .button-secondary {
   border-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
   background: color-mix(in srgb, var(--color-accent) 10%, transparent);
   color: var(--color-accent);
 }
 
+@media (hover: hover) {
+
+  .button-secondary:hover,
+  .button-secondary:focus-visible {
+    background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+    box-shadow: 0 12px 30px -8px var(--color-accent-soft);
+  }
+}
+
+.button-secondary:focus-visible {
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  box-shadow: 0 12px 30px -8px var(--color-accent-soft);
+}
+
 :root[data-theme='dark'] .button-primary {
   background: var(--syn-purple);
   color: #ffffff;
+}
+
+@media (hover: hover) {
+
+  :root[data-theme='dark'] .button-primary:hover,
+  :root[data-theme='dark'] .button-primary:focus-visible {
+    background: color-mix(in srgb, var(--syn-purple) 85%, white);
+    box-shadow: 0 12px 30px -6px rgba(211, 148, 247, 0.4);
+  }
 }
 
 :root[data-theme='dark'] .button-secondary {
@@ -693,71 +709,43 @@ code {
   color: #ffffff;
 }
 
-/* ==========================================
-   8. TARJETAS & BORDE ANIMADO GLASSMORPHISM (components/cards.css)
-   ========================================== */
+@media (hover: hover) {
 
-/* Propiedad animable compartida para el ángulo del gradiente cónico del borde */
-@property --glow-border-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
+  :root[data-theme='dark'] .button-secondary:hover,
+  :root[data-theme='dark'] .button-secondary:focus-visible {
+    border-color: color-mix(in srgb, var(--syn-purple) 72%, white);
+    background: color-mix(in srgb, var(--syn-dark-blue) 62%, var(--syn-purple));
+    box-shadow: 0 12px 30px -6px rgba(10, 46, 90, 0.5);
+  }
 }
 
+/* ==========================================
+   8. TARJETAS & ANIMACIONES PREMIUM 3D GLASSMORPHISM (components/cards.css)
+   ========================================== */
 .card {
-  position: relative;
   padding: var(--space-lg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--glass-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   box-shadow: var(--shadow-md);
-  transition: box-shadow 0.4s ease;
-  -webkit-font-smoothing: antialiased;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.5s ease;
+  will-change: transform, box-shadow;
 }
 
-/* Pseudo-elemento: gradiente cónico enmascarado como borde giratorio */
-.card::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  padding: 4px;
-  background: conic-gradient(
-    from var(--glow-border-angle),
-    transparent 0%,
-    var(--syn-dark-blue) 8%,
-    var(--syn-purple) 18%,
-    color-mix(in srgb, var(--syn-purple) 60%, white) 25%,
-    transparent 35%
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-
-/* Hover: solo en desktop (puntero fino) */
+/* Hover solo en dispositivos con puntero fino (no touch) */
 @media (hover: hover) {
   .card:hover {
-    border-color: transparent;
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--color-accent);
     box-shadow:
-      var(--shadow-md),
-      0 0 18px -6px var(--color-accent-soft);
-  }
-
-  .card:hover::before {
-    opacity: 1;
-    animation: glow-border-spin 2.8s linear infinite;
-  }
-}
-
-@keyframes glow-border-spin {
-  to {
-    --glow-border-angle: 360deg;
+      0 32px 64px -24px var(--color-shadow),
+      0 0 30px -10px var(--color-accent-soft);
   }
 }
 
@@ -942,4 +930,43 @@ select:focus {
    ========================================== */
 .page-inner .content-section {
   padding-bottom: var(--space-2xl);
+}
+
+/* ==========================================
+   15. SECCIONES - EQUIPO (team)
+   ========================================== */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-sm);
+}
+
+.team-card__photo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid var(--color-border);
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.team-card__role {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
