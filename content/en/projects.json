@@ -2,22 +2,18 @@
   "locale": "en",
   "slug": "projects",
   "path": "/en/projects/",
-  "title": "Projects | Synnergy Lab",
-  "description": "Section reserved for real strategic marketing case studies and business-focused outcomes.",
-  "heading": "Projects and cases with business focus",
-  "intro": "This section is ready to hold real cases that demonstrate impact on leads, conversions, inquiries, or positioning.",
+  "title": "Completed projects | Synnergy Lab",
+  "description": "Two completed Synnergy Lab projects with real context around creation, brand transformation, and digital growth.",
+  "heading": "Completed projects",
+  "intro": "Explore two real projects where Synnergy Lab created, transformed, and supported brands with a strategic focus.",
   "sections": [
     {
-      "title": "Context before appearance",
-      "body": "Each case should explain the starting point, business problem, hypothesis, and actions taken."
+      "title": "Luminare Photography",
+      "body": "Synnergy Lab created the Luminare Photography studio from scratch."
     },
     {
-      "title": "Useful metrics",
-      "body": "Social proof should prioritize business indicators over attractive but empty outputs."
-    },
-    {
-      "title": "No inflated claims",
-      "body": "Until validated material is available, we avoid inventing outcomes or unsupported promises."
+      "title": "Mr Fox",
+      "body": "Mr Fox came to us because he had not yet moved into the digital space."
     }
   ]
 }

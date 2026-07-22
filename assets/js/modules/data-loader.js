@@ -52,9 +52,11 @@
       .then((data) => {
         projectsContainer.innerHTML = data
           .map((item) => `
-            <article class="card content-card" id="project-${item.id}">
-              <div>
-                <p class="section-kicker">${item.kicker[lang]}</p>
+            <article class="card content-card project-card" id="project-${item.id}">
+              <div class="project-card__photo">
+                <img src="${siteRootPrefix}${item.image.src}" alt="${item.image.alt[lang]}" loading="lazy" />
+              </div>
+              <div class="project-card__content">
                 <h3 class="card__title">${item.title[lang]}</h3>
                 <p class="card__body">${item.description[lang]}</p>
               </div>

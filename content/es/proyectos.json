@@ -2,22 +2,18 @@
   "locale": "es",
   "slug": "proyectos",
   "path": "/es/proyectos/",
-  "title": "Proyectos | Synnergy Lab",
-  "description": "Espacio reservado para mostrar casos y resultados reales de marketing estratégico sin inflar promesas.",
-  "heading": "Proyectos y casos con foco en negocio",
-  "intro": "Esta sección queda preparada para incorporar casos reales que demuestren impacto en consultas, leads, conversiones o posicionamiento.",
+  "title": "Proyectos realizados | Synnergy Lab",
+  "description": "Dos proyectos realizados por Synnergy Lab con contexto real de creación, transformación de marca y digitalización.",
+  "heading": "Proyectos realizados",
+  "intro": "Conoce dos proyectos reales en los que Synnergy Lab creó, transformó y acompañó marcas con foco estratégico.",
   "sections": [
     {
-      "title": "Contexto antes que apariencia",
-      "body": "Cada caso debe explicar situación inicial, problema de negocio, hipótesis y acciones tomadas."
+      "title": "Luminare Photography",
+      "body": "Synnergy Lab creó directamente desde cero el estudio Luminare Photography."
     },
     {
-      "title": "Métricas útiles",
-      "body": "La prueba social debe priorizar indicadores de negocio y no piezas bonitas sin lectura estratégica."
-    },
-    {
-      "title": "Sin humo",
-      "body": "Hasta contar con material validado, evitamos inventar resultados o promesas no sustentadas."
+      "title": "Mr Fox",
+      "body": "Mr Fox acudió a nosotros porque aún no había pasado al plano digital."
     }
   ]
 }
