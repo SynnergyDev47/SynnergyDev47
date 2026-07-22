@@ -244,6 +244,11 @@ code {
   .card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+  }
 }
 
 /* ==========================================
@@ -935,7 +940,8 @@ select:focus {
 /* ==========================================
    15. SECCIONES - EQUIPO (team)
    ========================================== */
-.team-card {
+.team-card,
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -943,7 +949,8 @@ select:focus {
   gap: var(--space-sm);
 }
 
-.team-card__photo {
+.team-card__photo,
+.project-card__photo {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -952,14 +959,16 @@ select:focus {
   border: 3px solid var(--color-border);
 }
 
-.team-card__photo img {
+.team-card__photo img,
+.project-card__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.team-card__info {
+.team-card__info,
+.project-card__content {
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);

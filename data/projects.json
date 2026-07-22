@@ -1,47 +1,38 @@
 [
   {
-    "id": "proyecto-ecommerce",
-    "title": {
-      "es": "E-commerce de Moda Sostenible",
-      "en": "Sustainable Fashion E-commerce"
+    "id": "luminare-photography",
+    "image": {
+      "src": "assets/img/projects/luminare-photography-placeholder.svg",
+      "alt": {
+        "es": "Placeholder de Luminare Photography",
+        "en": "Luminare Photography placeholder"
+      }
     },
-    "kicker": {
-      "es": "Optimización de Embudo",
-      "en": "Funnel Optimization"
+    "title": {
+      "es": "Luminare Photography",
+      "en": "Luminare Photography"
     },
     "description": {
-      "es": "Rediseño completo de la estrategia de adquisición, segmentación avanzada de anuncios y automatización de embudos de email, logrando aumentar un 45% las ventas recurrentes en 6 meses.",
-      "en": "Complete redesign of the acquisition strategy, advanced ad targeting, and email funnel automation, achieving a 45% increase in recurring sales in 6 months."
+      "es": "Synnergy Lab creó directamente desde cero el estudio Luminare Photography. Se diseñó por entero la identidad visual y el branding. Bajo las directrices de la agencia y el control de la creación de contenido, en tres meses, Luminare pasó de no existir a tener un flujo de al menos dos contratos semanales.",
+      "en": "Synnergy Lab created the Luminare Photography studio from scratch. We designed its entire visual identity and branding. Under the agency’s direction and supervision of content creation, within three months Luminare went from not existing to generating a steady flow of at least two contracts per week."
     }
   },
   {
-    "id": "proyecto-b2b",
-    "title": {
-      "es": "Firma de Consultoría Tecnológica",
-      "en": "Tech Consulting Firm"
+    "id": "mr-fox",
+    "image": {
+      "src": "assets/img/projects/mr-fox-placeholder.svg",
+      "alt": {
+        "es": "Placeholder de Mr Fox",
+        "en": "Mr Fox placeholder"
+      }
     },
-    "kicker": {
-      "es": "Generación de Leads B2B",
-      "en": "B2B Lead Generation"
+    "title": {
+      "es": "Mr Fox",
+      "en": "Mr Fox"
     },
     "description": {
-      "es": "Definición de propuesta de valor en canales profesionales (LinkedIn) y diseño de embudo de captación automatizado, incrementando un 60% las solicitudes de diagnóstico calificado.",
-      "en": "Value proposition definition on professional networks (LinkedIn) and automated capture funnel design, growing qualified diagnosis requests by 60%."
-    }
-  },
-  {
-    "id": "proyecto-local",
-    "title": {
-      "es": "Centro Médico de Bienestar Integral",
-      "en": "Holistic Wellness Medical Center"
-    },
-    "kicker": {
-      "es": "SEO Local y Conversión",
-      "en": "Local SEO & Conversion"
-    },
-    "description": {
-      "es": "Optimización del perfil comercial de Google y estrategia de contenido localizado enfocada en conversión directa, logrando duplicar el agendamiento mensual de pacientes.",
-      "en": "Google business profile optimization and localized content strategy focused on direct conversion, successfully doubling monthly patient bookings."
+      "es": "Mr Fox acudió a nosotros porque aún no había pasado al plano digital. Como entrenador de fitness, necesitaba ofrecer sus servicios de manera digital. Luego de transformar su marca por completo con nosotros, Mr Fox no solo pudo duplicar el precio de sus servicios, sino que también duplicó su número de clientes.",
+      "en": "Mr Fox came to us because he had not yet moved into the digital space. As a fitness trainer, he needed to offer his services digitally. After completely transforming his brand with us, Mr Fox was able not only to double the price of his services, but also to double his number of clients."
     }
   }
 ]
