@@ -1,47 +1,47 @@
 [
   {
-    "id": "diagnostico",
+    "id": "nueva-marca",
     "title": {
-      "es": "Diagnóstico Estratégico de Marketing",
-      "en": "Strategic Marketing Diagnosis"
+      "es": "Nueva Marca",
+      "en": "New Brand"
     },
     "kicker": {
-      "es": "Auditoría Inicial",
-      "en": "Initial Audit"
+      "es": "Construcción o rebranding",
+      "en": "Brand building or rebranding"
     },
     "description": {
-      "es": "Analizamos la situación real de tu negocio, tu competencia y tu presencia digital para detectar qué está frenando el crecimiento y dónde radican las mayores oportunidades comerciales.",
-      "en": "We analyze your real business situation, competition, and digital presence to identify what is blocking growth and where the greatest commercial opportunities lie."
+      "es": "Para negocios que necesitan construir, completar o corregir su marca. Incluye diagnóstico, posicionamiento, propuesta de valor y una base visual y verbal coherente, lista para operar.",
+      "en": "For businesses that need to build, complete, or correct their brand. It covers diagnosis, positioning, value proposition, and a coherent verbal and visual foundation ready to use."
     }
   },
   {
-    "id": "estrategia",
+    "id": "integral",
     "title": {
-      "es": "Estrategia de Marketing a Medida",
-      "en": "Tailored Marketing Strategy"
+      "es": "Integral",
+      "en": "Comprehensive"
     },
     "kicker": {
-      "es": "Planificación y Roadmap",
-      "en": "Planning & Roadmap"
+      "es": "Sistema completo",
+      "en": "Complete system"
     },
     "description": {
-      "es": "Definimos tu propuesta de valor, audiencias ideales (buyer personas), selección de canales eficaces y objetivos medibles, estructurando un plan de acción para que dejes de improvisar.",
-      "en": "We define your value proposition, ideal audiences (buyer personas), effective channel selection, and measurable goals, structuring an action plan so you can stop improvising."
+      "es": "Una intervención profunda que conecta diagnóstico, marca, sistema de ventas, contenido, lanzamiento y análisis. Está pensado para empresas que necesitan transformar el conjunto, no sumar piezas aisladas.",
+      "en": "A deep engagement connecting diagnosis, brand, sales system, content, launch, and analysis. It is designed for companies that need to transform the whole system, not add isolated pieces."
     }
   },
   {
-    "id": "optimizacion",
+    "id": "campana",
     "title": {
-      "es": "Implementación, Medición y Optimización",
-      "en": "Implementation, Measurement & Optimization"
+      "es": "Campaña",
+      "en": "Campaign"
     },
     "kicker": {
-      "es": "Crecimiento Continuo",
-      "en": "Continuous Growth"
+      "es": "Lanzamiento y validación",
+      "en": "Launch and validation"
     },
     "description": {
-      "es": "Ejecutamos acciones alineadas con la estrategia, realizamos un seguimiento de métricas clave (KPIs) y optimizamos el sistema de marketing periódicamente para mejorar el rendimiento comercial.",
-      "en": "We execute actions aligned with the strategy, track key performance indicators (KPIs), and optimize the marketing system periodically to improve business performance."
+      "es": "Para marcas establecidas que preparan una iniciativa concreta. Validamos la base, estructuramos el funnel, coordinamos el lanzamiento y acompañamos la campaña para observar, ajustar y aprender.",
+      "en": "For established brands preparing a specific initiative. We validate the foundation, structure the funnel, coordinate the launch, and support the campaign to observe, adjust, and learn."
     }
   }
 ]
