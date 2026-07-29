@@ -2,10 +2,10 @@
   {
     "id": "luminare-photography",
     "image": {
-      "src": "assets/img/projects/luminare-photography-placeholder.svg",
+      "src": "assets/img/projects/luminare-logo.jpg",
       "alt": {
-        "es": "Placeholder de Luminare Photography",
-        "en": "Luminare Photography placeholder"
+        "es": "Logo de Luminare Photography",
+        "en": "Luminare Photography logo"
       }
     },
     "title": {
@@ -20,10 +20,10 @@
   {
     "id": "mr-fox",
     "image": {
-      "src": "assets/img/projects/mr-fox-placeholder.svg",
+      "src": "assets/img/projects/mr-fox-logo.png",
       "alt": {
-        "es": "Placeholder de Mr Fox",
-        "en": "Mr Fox placeholder"
+        "es": "Logo de Mr Fox",
+        "en": "Mr Fox logo"
       }
     },
     "title": {
