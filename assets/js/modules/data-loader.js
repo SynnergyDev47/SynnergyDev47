@@ -20,6 +20,11 @@
   // 2. Cargar Servicios si el contenedor existe
   const servicesContainer = document.getElementById('dynamic-services');
   if (servicesContainer) {
+    const pricingCopy = lang.startsWith('en')
+      ? { demo: 'Demo price', cta: 'Ask about this plan', features: 'What it includes' }
+      : { demo: 'Precio demo', cta: 'Consultar este plan', features: 'Qué incluye' };
+    const contactPath = lang.startsWith('en') ? '../contact/' : '../contacto/';
+
     fetch(`${siteRootPrefix}data/services.json`)
       .then((res) => {
         if (!res.ok) throw new Error('Error al cargar servicios JSON');
@@ -28,12 +33,25 @@
       .then((data) => {
         servicesContainer.innerHTML = data
           .map((item) => `
-            <article class="card content-card" id="service-${item.id}">
-              <div>
+            <article class="card pricing-card${item.featured ? ' pricing-card--featured' : ''}" id="service-${item.id}">
+              ${item.featured ? `<p class="pricing-card__badge">${item.featuredLabel[lang]}</p>` : ''}
+              <div class="pricing-card__header">
                 <p class="section-kicker">${item.kicker[lang]}</p>
-                <h3 class="card__title">${item.title[lang]}</h3>
+                <h3 class="pricing-card__title">${item.title[lang]}</h3>
+                <div class="pricing-card__price" aria-label="${item.pricingStatus === 'prototype' ? `${pricingCopy.demo}: ` : ''}${item.price.prefix[lang]} ${item.price.currency} ${item.price.amount}">
+                  ${item.pricingStatus === 'prototype' ? `<span class="pricing-card__status">${pricingCopy.demo}</span>` : ''}
+                  <span class="pricing-card__prefix">${item.price.prefix[lang]}</span>
+                  <strong><span class="pricing-card__currency">${item.price.currency}</span> ${item.price.amount}</strong>
+                </div>
                 <p class="card__body">${item.description[lang]}</p>
               </div>
+              <div class="pricing-card__details">
+                <p class="pricing-card__features-label">${pricingCopy.features}</p>
+                <ul class="pricing-card__features">
+                  ${item.features[lang].map((feature) => `<li>${feature}</li>`).join('')}
+                </ul>
+              </div>
+              <a class="button button-primary pricing-card__cta" href="${contactPath}?plan=${encodeURIComponent(item.id)}">${pricingCopy.cta}</a>
             </article>
           `)
           .join('');

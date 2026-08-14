@@ -99,149 +99,111 @@
 
   <!-- Contenido principal: agrupa bloques funcionales de valor (hero + contenido) y sirve como referencia para accesibilidad. -->
   <main id="main-content">
-    <!-- Hero: presenta la propuesta central de la ruta actual y orienta al usuario hacia acciones prioritarias mediante CTAs. -->
     <section class="hero-section">
       <div class="container hero-grid">
-        <!-- Mensaje principal del hero: título, contexto y narrativa alineada con el objetivo de esta página dentro del embudo. -->
         <div class="hero-copy">
           <h1>Un método para avanzar sin improvisar</h1>
           <p class="eyebrow">Cómo trabaja Synnergy Lab</p>
           <p class="lead">Cada proyecto sigue una secuencia común: comprender, construir, activar y aprender. La
             profundidad cambia según el plan y el estado real de la empresa.</p>
-          <!-- Acciones clave: conectan con rutas internas estratégicas (contacto, servicios, proyectos, etc.) para sostener la navegación. -->
           <div class="button-row">
             <a class="button button-primary" href="../agencia/">Conocer la agencia</a>
             <a class="button button-secondary" href="../contacto/">Solicitar diagnóstico</a>
           </div>
         </div>
-        <!-- Panel complementario del hero: resume beneficios/cobertura y refuerza lo expuesto en el bloque principal. -->
-        <aside class="hero-panel card">
-          <h2>Las cinco fases</h2>
-          <ul class="feature-list">
-            <li><a href="#diagnostico-digital">Diagnóstico Digital</a></li>
-            <li><a href="#diseno-marca">Diseño de Marca</a></li>
-            <li><a href="#sistema-ventas">Sistema de Ventas</a></li>
-            <li><a href="#lanzamiento-campana">Lanzamiento de Campaña</a></li>
-            <li><a href="#analisis-optimizacion">Análisis y Optimización</a></li>
-          </ul>
+        <aside class="hero-panel card page-toc">
+          <h2>En esta página</h2>
+          <nav aria-label="Secciones de esta página">
+            <ul class="feature-list">
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#metodologia">Metodología</a></li>
+              <li><a href="#herramientas">Herramientas</a></li>
+            </ul>
+          </nav>
         </aside>
       </div>
     </section>
 
-    <!-- Sección de desarrollo: profundiza lo prometido en el hero con bloques modulares que mantienen el mismo sistema visual. -->
-    <section class="content-section">
-      <!-- Encabezado de sección: introduce el tema del bloque de tarjetas para que el contenido conserve jerarquía semántica. -->
-      <div class="container section-heading">
-        <p class="section-kicker">Flujo de trabajo</p>
-        <h2>Cada fase prepara la siguiente</h2>
-      </div>
-      <!-- Rejilla de tarjetas: estructura información en unidades paralelas para facilitar lectura, comparación y escalabilidad. -->
-      <div class="container card-grid">
-        <!-- Tarjeta de contenido 1: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="card content-card" id="diagnostico-digital">
-          <h2>1. Diagnóstico Digital</h2>
-          <p>Se estudian negocio, mercado, presencia digital, ventas y capacidad operativa para detectar fricciones y
-            ordenar prioridades.</p>
-        </article>
-        <!-- Tarjeta de contenido 2: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="card content-card" id="diseno-marca">
-          <h2>2. Diseño de Marca</h2>
-          <p>Se construye o corrige la identidad estratégica, verbal y visual que la empresa necesita para comunicar con
-            coherencia.</p>
-        </article>
-        <!-- Tarjeta de contenido 3: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="card content-card" id="sistema-ventas">
-          <h2>3. Sistema de Ventas</h2>
-          <p>Se conecta la captación con la conversión mediante funnel, activos, seguimiento y un calendario alineado
-            con el recorrido del público.</p>
-        </article>
-        <article class="card content-card" id="lanzamiento-campana">
-          <h2>4. Lanzamiento de Campaña</h2>
-          <p>La campaña se activa con acompañamiento, supervisión y ajustes. Lanzar no es pulsar un botón y cruzar los
-            dedos.</p>
-        </article>
-        <article class="card content-card" id="analisis-optimizacion">
-          <h2>5. Análisis y Optimización</h2>
-          <p>Los resultados se interpretan para identificar aprendizajes, priorizar mejoras y definir el siguiente
-            ciclo.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container section-heading">
-        <p class="section-kicker">Herramientas de trabajo</p>
-        <h2>La metodología se adapta al problema, no al revés</h2>
-      </div>
-      <div class="container card-grid">
-        <article class="card content-card">
-          <h2>FODA y benchmarking</h2>
-          <p>Ayudan a leer la situación interna, el mercado y las referencias competitivas antes de definir una
-            dirección.</p>
-        </article>
-        <article class="card content-card">
-          <h2>Customer Journey y funnel</h2>
-          <p>Permiten conectar mensajes, canales y puntos de conversión con cada etapa del recorrido del cliente.</p>
-        </article>
-        <article class="card content-card">
-          <h2>Ciclos de aprendizaje</h2>
-          <p>La medición, los feedback loops y las pruebas controladas convierten la ejecución en mejoras concretas.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Sección equipo: presenta a los integrantes de Synnergy Lab con foto, nombre y rol. -->
-    <section class="content-section">
+    <section class="content-section" id="equipo">
       <div class="container section-heading">
         <p class="section-kicker">Equipo</p>
         <h2>Nuestro equipo</h2>
       </div>
-      <div class="container card-grid">
+      <div class="container card-grid team-grid" data-team-grid>
         <article class="card team-card">
-          <div class="team-card__photo">
-            <img src="../../assets/img/team/aurelio.jpg" alt="Aurelio Crespo — Estratega de Marca" />
+          <div class="team-card__summary">
+            <div class="team-card__photo"><img src="../../assets/img/team/aurelio.jpg" alt="Aurelio Crespo — Estratega de Marca" loading="lazy" decoding="async" /></div>
+            <div class="team-card__info"><h3 class="card__title">Aurelio Crespo</h3><p class="team-card__role">Estratega de Marca</p></div>
+            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-aurelio" aria-label="Ver perfil ampliado de Aurelio Crespo"><span aria-hidden="true">+</span></button>
           </div>
-          <div class="team-card__info">
-            <h3 class="card__title">Aurelio Crespo</h3>
-            <p class="team-card__role">Estratega de Marca</p>
-          </div>
+          <div class="team-card__details" id="perfil-aurelio" hidden><p>Información ampliada en preparación.</p></div>
         </article>
         <article class="card team-card">
-          <div class="team-card__photo">
-            <img src="../../assets/img/team/lázaro.jpg" alt="Lázaro Pina — Desarrollador Web" />
+          <div class="team-card__summary">
+            <div class="team-card__photo"><img src="../../assets/img/team/lázaro.jpg" alt="Lázaro Pina — Desarrollador Web" loading="lazy" decoding="async" /></div>
+            <div class="team-card__info"><h3 class="card__title">Lázaro Pina</h3><p class="team-card__role">Desarrollador Web</p></div>
+            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-lazaro" aria-label="Ver perfil ampliado de Lázaro Pina"><span aria-hidden="true">+</span></button>
           </div>
-          <div class="team-card__info">
-            <h3 class="card__title">Lázaro Pina</h3>
-            <p class="team-card__role">Desarrollador Web</p>
-          </div>
+          <div class="team-card__details" id="perfil-lazaro" hidden><p>Información ampliada en preparación.</p></div>
         </article>
         <article class="card team-card">
-          <div class="team-card__photo">
-            <img src="../../assets/img/team/tony.jpg" alt="Antonio León — Manager Comercial" />
+          <div class="team-card__summary">
+            <div class="team-card__photo"><img src="../../assets/img/team/tony.jpg" alt="Antonio León — Manager Comercial" loading="lazy" decoding="async" /></div>
+            <div class="team-card__info"><h3 class="card__title">Antonio León</h3><p class="team-card__role">Manager Comercial</p></div>
+            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-antonio" aria-label="Ver perfil ampliado de Antonio León"><span aria-hidden="true">+</span></button>
           </div>
-          <div class="team-card__info">
-            <h3 class="card__title">Antonio León</h3>
-            <p class="team-card__role">Manager Comercial</p>
-          </div>
+          <div class="team-card__details" id="perfil-antonio" hidden><p>Información ampliada en preparación.</p></div>
         </article>
         <article class="card team-card">
-          <div class="team-card__photo">
-            <img src="../../assets/img/team/amy.jpg" alt="Amanda Prieto — Diseñadora Gráfica" />
+          <div class="team-card__summary">
+            <div class="team-card__photo"><img src="../../assets/img/team/amy.jpg" alt="Amanda Prieto — Diseñadora Gráfica" loading="lazy" decoding="async" /></div>
+            <div class="team-card__info"><h3 class="card__title">Amanda Prieto</h3><p class="team-card__role">Diseñadora Gráfica</p></div>
+            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-amanda" aria-label="Ver perfil ampliado de Amanda Prieto"><span aria-hidden="true">+</span></button>
           </div>
-          <div class="team-card__info">
-            <h3 class="card__title">Amanda Prieto</h3>
-            <p class="team-card__role">Diseñadora Gráfica</p>
-          </div>
+          <div class="team-card__details" id="perfil-amanda" hidden><p>Información ampliada en preparación.</p></div>
         </article>
         <article class="card team-card">
-          <div class="team-card__photo">
-            <img src="../../assets/img/team/sam.jpg" alt="Samuel Rodríguez — Analista de Datos" />
+          <div class="team-card__summary">
+            <div class="team-card__photo"><img src="../../assets/img/team/sam.jpg" alt="Samuel Rodríguez — Analista de Datos" loading="lazy" decoding="async" /></div>
+            <div class="team-card__info"><h3 class="card__title">Samuel Rodríguez</h3><p class="team-card__role">Analista de Datos</p></div>
+            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-samuel" aria-label="Ver perfil ampliado de Samuel Rodríguez"><span aria-hidden="true">+</span></button>
           </div>
-          <div class="team-card__info">
-            <h3 class="card__title">Samuel Rodríguez</h3>
-            <p class="team-card__role">Analista de Datos</p>
-          </div>
+          <div class="team-card__details" id="perfil-samuel" hidden><p>Información ampliada en preparación.</p></div>
         </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="metodologia">
+      <div class="container section-heading">
+        <p class="section-kicker">Flujo de trabajo</p>
+        <h2>Cada fase prepara la siguiente</h2>
+      </div>
+      <div class="container process-flow" data-process-flow>
+        <div class="process-tabs">
+          <div class="process-tablist" role="tablist" aria-label="Fases de la metodología">
+            <button class="process-tab" type="button" role="tab" id="tab-diagnostico" aria-selected="true" aria-controls="diagnostico-digital"><span>01</span><strong>Diagnóstico</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-marca" aria-selected="false" aria-controls="diseno-marca"><span>02</span><strong>Marca</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-ventas" aria-selected="false" aria-controls="sistema-ventas"><span>03</span><strong>Ventas</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-lanzamiento" aria-selected="false" aria-controls="lanzamiento-campana"><span>04</span><strong>Lanzamiento</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-analisis" aria-selected="false" aria-controls="analisis-optimizacion"><span>05</span><strong>Análisis</strong></button>
+          </div>
+        </div>
+        <div class="process-panels">
+          <article class="process-panel" id="diagnostico-digital" role="tabpanel" aria-labelledby="tab-diagnostico"><span class="process-panel__number">01</span><div><h3>Diagnóstico Digital</h3><p>Se estudian negocio, mercado, presencia digital, ventas y capacidad operativa para detectar fricciones y ordenar prioridades.</p></div></article>
+          <article class="process-panel" id="diseno-marca" role="tabpanel" aria-labelledby="tab-marca"><span class="process-panel__number">02</span><div><h3>Diseño de Marca</h3><p>Se construye o corrige la identidad estratégica, verbal y visual que la empresa necesita para comunicar con coherencia.</p></div></article>
+          <article class="process-panel" id="sistema-ventas" role="tabpanel" aria-labelledby="tab-ventas"><span class="process-panel__number">03</span><div><h3>Sistema de Ventas</h3><p>Se conecta la captación con la conversión mediante funnel, activos, seguimiento y un calendario alineado con el recorrido del público.</p></div></article>
+          <article class="process-panel" id="lanzamiento-campana" role="tabpanel" aria-labelledby="tab-lanzamiento"><span class="process-panel__number">04</span><div><h3>Lanzamiento de Campaña</h3><p>La campaña se activa con acompañamiento, supervisión y ajustes. Lanzar no es pulsar un botón y cruzar los dedos.</p></div></article>
+          <article class="process-panel" id="analisis-optimizacion" role="tabpanel" aria-labelledby="tab-analisis"><span class="process-panel__number">05</span><div><h3>Análisis y Optimización</h3><p>Los resultados se interpretan para identificar aprendizajes, priorizar mejoras y definir el siguiente ciclo.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="herramientas">
+      <div class="container section-heading"><p class="section-kicker">Herramientas de trabajo</p><h2>La metodología se adapta al problema, no al revés</h2></div>
+      <div class="container content-grid">
+        <article class="content-block"><h3>FODA y benchmarking</h3><p>Ayudan a leer la situación interna, el mercado y las referencias competitivas antes de definir una dirección.</p></article>
+        <article class="content-block"><h3>Customer Journey y funnel</h3><p>Permiten conectar mensajes, canales y puntos de conversión con cada etapa del recorrido del cliente.</p></article>
+        <article class="content-block"><h3>Ciclos de aprendizaje</h3><p>La medición, los feedback loops y las pruebas controladas convierten la ejecución en mejoras concretas.</p></article>
       </div>
     </section>
   </main>

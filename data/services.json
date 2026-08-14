@@ -12,6 +12,19 @@
     "description": {
       "es": "Para negocios que necesitan construir, completar o corregir su marca. Incluye diagnóstico, posicionamiento, propuesta de valor y una base visual y verbal coherente, lista para operar.",
       "en": "For businesses that need to build, complete, or correct their brand. It covers diagnosis, positioning, value proposition, and a coherent verbal and visual foundation ready to use."
+    },
+    "price": {
+      "amount": 299,
+      "currency": "USD",
+      "prefix": {
+        "es": "Desde",
+        "en": "From"
+      }
+    },
+    "pricingStatus": "prototype",
+    "features": {
+      "es": ["Diagnóstico", "Posicionamiento", "Propuesta de valor", "Identidad verbal", "Identidad visual"],
+      "en": ["Diagnosis", "Positioning", "Value proposition", "Verbal identity", "Visual identity"]
     }
   },
   {
@@ -27,6 +40,24 @@
     "description": {
       "es": "Una intervención profunda que conecta diagnóstico, marca, sistema de ventas, contenido, lanzamiento y análisis. Está pensado para empresas que necesitan transformar el conjunto, no sumar piezas aisladas.",
       "en": "A deep engagement connecting diagnosis, brand, sales system, content, launch, and analysis. It is designed for companies that need to transform the whole system, not add isolated pieces."
+    },
+    "price": {
+      "amount": 899,
+      "currency": "USD",
+      "prefix": {
+        "es": "Desde",
+        "en": "From"
+      }
+    },
+    "pricingStatus": "prototype",
+    "featured": true,
+    "featuredLabel": {
+      "es": "Más completo",
+      "en": "Most complete"
+    },
+    "features": {
+      "es": ["Diagnóstico", "Marca", "Sistema de ventas", "Contenido", "Lanzamiento", "Análisis"],
+      "en": ["Diagnosis", "Brand", "Sales system", "Content", "Launch", "Analysis"]
     }
   },
   {
@@ -42,6 +73,19 @@
     "description": {
       "es": "Para marcas establecidas que preparan una iniciativa concreta. Validamos la base, estructuramos el funnel, coordinamos el lanzamiento y acompañamos la campaña para observar, ajustar y aprender.",
       "en": "For established brands preparing a specific initiative. We validate the foundation, structure the funnel, coordinate the launch, and support the campaign to observe, adjust, and learn."
+    },
+    "price": {
+      "amount": 499,
+      "currency": "USD",
+      "prefix": {
+        "es": "Desde",
+        "en": "From"
+      }
+    },
+    "pricingStatus": "prototype",
+    "features": {
+      "es": ["Validación de la base", "Funnel", "Preparación del lanzamiento", "Acompañamiento", "Observación y ajustes"],
+      "en": ["Foundation validation", "Funnel", "Launch preparation", "Support", "Observation and adjustments"]
     }
   }
 ]

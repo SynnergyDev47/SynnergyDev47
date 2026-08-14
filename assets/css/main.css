@@ -321,6 +321,16 @@ code {
   gap: 0.4rem;
 }
 
+.site-header__actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+  margin-left: auto;
+}
+
 .language-toggle,
 .theme-toggle {
   display: inline-flex;
@@ -978,4 +988,483 @@ select:focus {
   color: var(--color-text-muted);
   font-size: 0.92rem;
   line-height: 1.4;
+}
+
+/* ==========================================
+   16. UX/UI EDITORIAL, PRICING Y COMPONENTES INTERACTIVOS
+   ========================================== */
+
+main [id] {
+  scroll-margin-top: 6.5rem;
+}
+
+:where(a, button):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-accent) 72%, white);
+  outline-offset: 3px;
+}
+
+.page-toc nav,
+.page-toc a {
+  position: relative;
+  z-index: 1;
+}
+
+.page-toc a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.page-toc a:hover,
+.page-toc a:focus-visible {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
+/* Bloques narrativos sin tratamiento de tarjeta. */
+.content-grid {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.content-block {
+  position: relative;
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.content-block::before {
+  content: '';
+  position: absolute;
+  top: var(--space-lg);
+  left: 0;
+  width: 2.5rem;
+  height: 0.2rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.content-block h2,
+.content-block h3 {
+  margin: 0 0 var(--space-xs);
+  padding-top: var(--space-sm);
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+}
+
+@media (min-width: 48rem) {
+  .content-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .content-block {
+    padding-right: var(--space-md);
+  }
+}
+
+/* Pricing: una fuente de datos, tres composiciones comparables. */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.pricing-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-lg);
+  min-width: 0;
+  overflow: visible;
+}
+
+.pricing-card--featured {
+  border-color: var(--color-accent);
+  box-shadow:
+    0 30px 70px -34px var(--color-shadow),
+    0 0 0 2px var(--color-accent-soft);
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: 0;
+  right: var(--space-md);
+  transform: translateY(-50%);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pricing-card__header {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.pricing-card__title {
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+}
+
+.pricing-card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.5rem;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pricing-card__status {
+  flex-basis: 100%;
+  width: max-content;
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.pricing-card__prefix {
+  color: var(--color-text-muted);
+  font-size: 0.86rem;
+}
+
+.pricing-card__price strong {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+}
+
+.pricing-card__currency {
+  font-size: 0.42em;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+
+.pricing-card__details {
+  align-self: stretch;
+}
+
+.pricing-card__features-label {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-strong);
+  font-weight: 700;
+}
+
+.pricing-card__features {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.pricing-card__features li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 0.9rem;
+}
+
+.pricing-card__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.pricing-card__cta {
+  width: 100%;
+}
+
+@media (min-width: 36rem) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 60rem) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pricing-card--featured {
+    transform: scale(1.025);
+  }
+
+  @media (hover: hover) {
+    .pricing-card--featured:hover {
+      transform: translateY(-8px) scale(1.035);
+    }
+  }
+}
+
+/* Plan seleccionado en Contacto. */
+.selected-plan {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+  width: fit-content;
+  padding: 0.55rem 0.85rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-accent-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.selected-plan span {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+/* Equipo expandible dentro del grid, sin modal. */
+.team-card {
+  display: block;
+  min-width: 0;
+  text-align: left;
+}
+
+.team-card__summary {
+  display: grid;
+  grid-template-columns: 4.75rem minmax(0, 1fr) 2.75rem;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.team-card__photo {
+  width: 4.75rem;
+  height: 4.75rem;
+}
+
+.team-card__toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface-soft);
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.team-card__toggle span {
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform 220ms ease;
+}
+
+.team-card.is-expanded {
+  grid-column: 1 / -1;
+  border-color: var(--color-accent);
+}
+
+.team-card.is-expanded .team-card__toggle span {
+  transform: rotate(45deg);
+}
+
+.team-card__details {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 48rem) {
+  .team-card.is-expanded .team-card__summary {
+    grid-template-columns: 7rem minmax(0, 1fr) 2.75rem;
+  }
+
+  .team-card.is-expanded .team-card__photo {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+/* Rail interactivo de metodología con fallback editorial sin JavaScript. */
+.process-flow {
+  min-width: 0;
+}
+
+.process-tabs {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
+  padding: 0.25rem 0 0.75rem;
+}
+
+.process-tabs::-webkit-scrollbar {
+  height: 0.4rem;
+}
+
+.process-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.process-tabs::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.process-tablist {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(7rem, 1fr));
+  min-width: 38rem;
+}
+
+.process-tablist::before {
+  content: '';
+  position: absolute;
+  top: 1.45rem;
+  right: 10%;
+  left: 10%;
+  height: 2px;
+  background: var(--color-border);
+}
+
+.process-tab {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 0.45rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.process-tab span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-background);
+  color: var(--color-text-strong);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.process-tab strong {
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.process-tab[aria-selected='true'] span {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.process-tab[aria-selected='true'] strong {
+  color: var(--color-accent);
+}
+
+.process-panels {
+  margin-top: var(--space-lg);
+}
+
+.process-panel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--color-border);
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.process-flow.is-enhanced .process-panel[hidden] {
+  display: none;
+}
+
+.process-flow:not(.is-enhanced) .process-panel + .process-panel {
+  margin-top: var(--space-sm);
+}
+
+.process-panel__number {
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.process-panel h3 {
+  margin-bottom: var(--space-xs);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.process-panel.is-leaving {
+  opacity: 0;
+  transform: translateX(-1rem);
+}
+
+.process-panel.is-entering {
+  opacity: 0;
+  transform: translateX(1rem);
+}
+
+/* Arquitectura reusable para futuras imágenes editoriales locales. */
+.editorial-media {
+  margin: 0;
+}
+
+.editorial-media picture,
+.editorial-media img {
+  display: block;
+  width: 100%;
+}
+
+.editorial-media img {
+  aspect-ratio: var(--editorial-aspect-ratio, 16 / 9);
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.editorial-media figcaption {
+  margin-top: var(--space-xs);
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 23rem) {
+  .site-header__inner {
+    gap: 0.5rem;
+  }
+
+  .site-header__actions,
+  .language-switcher {
+    gap: 0.25rem;
+  }
+
+  .brand-text {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

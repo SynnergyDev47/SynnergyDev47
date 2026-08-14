@@ -106,23 +106,25 @@ class SiteHeader extends HTMLElement {
               ${linksHtml}
             </ul>
           </nav>
-          <div class="language-switcher" aria-label="${currentNav.switchLabel}">
-            <a class="language-toggle" href="${oppositePath}" lang="${currentNav.switchLang}" aria-label="${currentNav.switchLabel}" title="${currentNav.switchLabel}">${currentNav.switchText}</a>
-            <button type="button" class="theme-toggle" aria-label="Cambiar tema"></button>
+          <div class="site-header__actions">
+            <div class="language-switcher" aria-label="${currentNav.switchLabel}">
+              <a class="language-toggle" href="${oppositePath}" lang="${currentNav.switchLang}" aria-label="${currentNav.switchLabel}" title="${currentNav.switchLabel}">${currentNav.switchText}</a>
+              <button type="button" class="theme-toggle" aria-label="Cambiar tema"></button>
+            </div>
+            <button
+              type="button"
+              class="nav-toggle"
+              aria-controls="site-nav"
+              aria-expanded="false"
+              aria-label="${currentNav.menuOpenLabel}"
+            >
+              <span class="nav-toggle__icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
           </div>
-          <button
-            type="button"
-            class="nav-toggle"
-            aria-controls="site-nav"
-            aria-expanded="false"
-            aria-label="${currentNav.menuOpenLabel}"
-          >
-            <span class="nav-toggle__icon" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
         </div>
       </header>
       <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>

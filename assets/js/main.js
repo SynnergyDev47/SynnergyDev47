@@ -44,4 +44,8 @@
 
   // 4. Cargar el módulo de carga dinámica de JSON (se auto-ejecuta si existen contenedores)
   loadModuleScript('data-loader.js');
+
+  // 5. Mejoras progresivas específicas; cada módulo se activa solo si encuentra su componente.
+  loadModuleScript('about-interactions.js');
+  loadModuleScript('contact-plan.js');
 })();
