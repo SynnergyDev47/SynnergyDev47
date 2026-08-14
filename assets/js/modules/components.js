@@ -97,8 +97,8 @@ class SiteHeader extends HTMLElement {
       <header class="site-header">
         <div class="container site-header__inner">
           <a class="brand-mark" href="${brandHref}" aria-label="${currentNav.brandLabel}">
-            <img class="brand-logo brand-logo--light" src="${siteRootPrefix}assets/img/branding/synnergy-lab-logo-color.png" alt="Synnergy Lab" />
-            <img class="brand-logo brand-logo--dark" src="${siteRootPrefix}assets/img/branding/synnergy-lab-logo-white.png" alt="Synnergy Lab" />
+            <img class="brand-logo brand-logo--light" src="${siteRootPrefix}assets/img/branding/synnergy-lab-logo-color.svg" alt="Synnergy Lab" />
+            <img class="brand-logo brand-logo--dark" src="${siteRootPrefix}assets/img/branding/synnergy-lab-logo-white.svg" alt="Synnergy Lab" />
             <span class="brand-text">Synnergy Lab</span>
           </a>
           <nav class="site-nav" id="site-nav" aria-label="${currentNav.navLabel}">
