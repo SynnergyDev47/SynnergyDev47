@@ -1,0 +1,48 @@
+{
+  "id": "retainer",
+  "title": "Retainer",
+  "kicker": {
+    "es": "Continuidad y optimización",
+    "en": "Continuity and optimization"
+  },
+  "description": {
+    "es": "Un servicio recurrente para clientes que ya han trabajado con Synnergy Lab y necesitan mantener, medir y mejorar el sistema implementado. El objetivo no es volver a empezar cada mes, sino convertir los datos y aprendizajes acumulados en ajustes continuos.",
+    "en": "A recurring service for clients who have already worked with Synnergy Lab and need to maintain, measure and improve the system already in place. The objective is not to restart every month, but to turn accumulated data and learning into continuous improvements."
+  },
+  "eligibility": {
+    "es": "Disponible exclusivamente para clientes existentes",
+    "en": "Available exclusively to existing clients"
+  },
+  "phase": {
+    "es": "Análisis y Optimización",
+    "en": "Analysis and Optimization"
+  },
+  "items": {
+    "es": [
+      "Seguimiento de métricas",
+      "Análisis periódico",
+      "Detección de nuevas fricciones",
+      "Optimización de campañas",
+      "Ajustes en funnel y puntos de conversión",
+      "Mejoras sobre activos ya implementados",
+      "Priorización del siguiente ciclo de trabajo"
+    ],
+    "en": [
+      "Metric tracking",
+      "Periodic analysis",
+      "Detection of new friction points",
+      "Campaign optimization",
+      "Funnel and conversion-point adjustments",
+      "Improvements to existing assets",
+      "Prioritization of the next work cycle"
+    ]
+  },
+  "price": {
+    "es": "Precio según alcance de continuidad",
+    "en": "Pricing based on ongoing scope"
+  },
+  "cta": {
+    "es": "Consultar continuidad",
+    "en": "Discuss ongoing support"
+  }
+}

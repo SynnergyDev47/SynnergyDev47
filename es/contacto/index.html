@@ -84,57 +84,93 @@
   <site-header></site-header>
 
   <!-- Contenido principal: agrupa bloques funcionales de valor (hero + contenido) y sirve como referencia para accesibilidad. -->
-  <main id="main-content">
-    <!-- Hero: presenta la propuesta central de la ruta actual y orienta al usuario hacia acciones prioritarias mediante CTAs. -->
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <!-- Mensaje principal del hero: título, contexto y narrativa alineada con el objetivo de esta página dentro del embudo. -->
-        <div class="hero-copy">
-          <h1>Primero, entendamos qué necesita tu negocio</h1>
-          <p class="eyebrow">Contacto directo</p>
-          <p class="lead">Cuéntanos tu contexto, el objetivo que persigues y qué has intentado hasta ahora. La primera decisión útil es definir dónde conviene intervenir.</p>
-          <!-- Acciones clave: conectan con rutas internas estratégicas (contacto, servicios, proyectos, etc.) para sostener la navegación. -->
-          <div class="button-row">
-            <a class="button button-primary" href="mailto:synnergydev@gmail.com">Escribir por email</a>
-            <a class="button button-secondary" href="../servicios/">Ver servicios</a>
+  <main id="main-content" class="contact-page">
+    <section class="contact-intro">
+      <div class="container contact-intro__copy">
+        <p class="eyebrow">Contacto</p>
+        <h1>Primero, entendamos qué necesita tu negocio</h1>
+        <p class="lead">Cuéntanos el contexto, el objetivo y qué se ha intentado. Esa información permite llegar a la primera conversación con una dirección más clara.</p>
+      </div>
+    </section>
+
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
+      <div class="container contact-layout">
+        <form class="card contact-form" id="contact-inquiry-form">
+          <div class="contact-form__heading">
+            <p class="section-kicker">Consulta con contexto</p>
+            <h2 id="contact-form-title">Cuéntanos qué necesita el negocio</h2>
+            <p>Un poco de contexto permite llegar a la primera conversación con una dirección más clara.</p>
           </div>
-        </div>
-        <!-- Panel complementario del hero: resume beneficios/cobertura y refuerza lo expuesto en el bloque principal. -->
-        <aside class="hero-panel card page-toc">
-          <h2>En esta página</h2>
-          <nav aria-label="Secciones de esta página"><ul class="feature-list">
-            <li><a href="#ordenar">Ordenar lo que está disperso</a></li>
-            <li><a href="#construir">Actualizar la marca</a></li>
-            <li><a href="#activar">Preparar una campaña</a></li>
-          </ul></nav>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="contact-name">Nombre</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-company">Empresa o proyecto</label>
+              <input id="contact-company" name="company" type="text" autocomplete="organization" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-plan">Plan de interés</label>
+              <select id="contact-plan" name="plan">
+                <option value="">No estoy seguro</option>
+                <option value="nueva-marca">Fundacional</option>
+                <option value="campana">Campaña</option>
+                <option value="integral">Transformación</option>
+                <option value="retainer">Retainer</option>
+              </select>
+              <p class="form-note form-note--eligibility" id="retainer-eligibility" hidden>El Retainer está disponible exclusivamente para clientes que ya han completado un proyecto con Synnergy Lab.</p>
+            </div>
+            <div class="form-field">
+              <label for="contact-need">¿Qué necesita resolver?</label>
+              <select id="contact-need" name="need" required>
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option>Ordenar la estrategia actual</option>
+                <option>Crear o rediseñar la marca</option>
+                <option>Construir un sistema de ventas</option>
+                <option>Preparar una campaña</option>
+                <option>Analizar y optimizar lo existente</option>
+                <option>Aún no está claro</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="contact-context">¿Qué está ocurriendo y qué resultado se busca?</label>
+              <textarea id="contact-context" name="context" rows="5" aria-describedby="contact-context-help" required></textarea>
+              <p class="form-note" id="contact-context-help">Basta con explicar brevemente el contexto, el objetivo y la principal dificultad.</p>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="contact-attempts">¿Qué se ha intentado hasta ahora?</label>
+              <textarea id="contact-attempts" name="attempts" rows="3" aria-describedby="contact-attempts-help"></textarea>
+              <p class="form-note" id="contact-attempts-help">Opcional. Ayuda a evitar repetir acciones que ya se han probado.</p>
+            </div>
+          </div>
+
+          <button class="button button-primary contact-form__submit" type="submit">Continuar en WhatsApp</button>
+          <p class="contact-form__privacy">Los datos no se almacenan ni se envían antes de continuar hacia WhatsApp.</p>
+        </form>
+
+        <aside class="contact-channels" aria-labelledby="direct-contact-title">
+          <p class="section-kicker">Vía rápida</p>
+          <h2 id="direct-contact-title">Contacto directo</h2>
+          <p>Si todavía no necesitas estructurar la consulta, puedes iniciar una conversación directamente.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://wa.me/5355172713?text=Hola%2C%20quiero%20hablar%20sobre%20los%20servicios%20de%20Synnergy%20Lab." target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
+            <a class="button button-secondary" href="mailto:synnergydev@gmail.com">Enviar un email</a>
+          </div>
         </aside>
       </div>
     </section>
 
-    <!-- Sección de desarrollo: profundiza lo prometido en el hero con bloques modulares que mantienen el mismo sistema visual. -->
-    <section class="content-section">
-      <!-- Encabezado de sección: introduce el tema del bloque de tarjetas para que el contenido conserve jerarquía semántica. -->
+    <section class="contact-signals" aria-labelledby="contact-signals-title">
       <div class="container section-heading">
         <p class="section-kicker">Cuándo escribirnos</p>
-        <h2>Tres señales de que hace falta una intervención</h2>
+        <h2 id="contact-signals-title">Tres señales de que hace falta una intervención</h2>
       </div>
-      <!-- Rejilla de tarjetas: estructura información en unidades paralelas para facilitar lectura, comparación y escalabilidad. -->
       <div class="container content-grid">
-        <!-- Tarjeta de contenido 1: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="content-block" id="ordenar">
-          <h2>Acciones sin dirección</h2>
-          <p>La empresa publica, promociona o invierte, pero cada acción funciona por separado y nadie puede explicar qué papel cumple.</p>
-        </article>
-        <!-- Tarjeta de contenido 2: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="content-block" id="construir">
-          <h2>Una marca que no representa al negocio</h2>
-          <p>La oferta ha evolucionado, pero la identidad, el mensaje o la presencia digital todavía cuentan una historia anterior.</p>
-        </article>
-        <!-- Tarjeta de contenido 3: bloque autocontenido que detalla un pilar específico y se integra con la narrativa general. -->
-        <article class="content-block" id="activar">
-          <h2>Un lanzamiento importante</h2>
-          <p>Hay un producto, servicio o iniciativa que necesita salir al mercado con funnel, mensajes, activos y medición coordinados.</p>
-        </article>
+        <article class="content-block"><h3>Acciones sin dirección</h3><p>Las acciones están dispersas y no se sabe qué papel cumple cada una.</p></article>
+        <article class="content-block"><h3>Una marca desactualizada</h3><p>La oferta evolucionó, pero la identidad o el mensaje todavía cuentan una historia anterior.</p></article>
+        <article class="content-block"><h3>Un lanzamiento importante</h3><p>La iniciativa necesita funnel, mensajes, activos y medición coordinados.</p></article>
       </div>
     </section>
   </main>

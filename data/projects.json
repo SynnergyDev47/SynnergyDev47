@@ -2,7 +2,7 @@
   {
     "id": "luminare-photography",
     "image": {
-      "src": "assets/img/projects/luminare-logo.jpg",
+      "src": "assets/img/projects/luminare-logo.webp",
       "alt": {
         "es": "Logo de Luminare Photography",
         "en": "Luminare Photography logo"
@@ -20,7 +20,7 @@
   {
     "id": "mr-fox",
     "image": {
-      "src": "assets/img/projects/mr-fox-logo.png",
+      "src": "assets/img/projects/mr-fox-logo.webp",
       "alt": {
         "es": "Logo de Mr Fox",
         "en": "Mr Fox logo"

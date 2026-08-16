@@ -17,13 +17,13 @@
   <meta property="og:description"
     content="Conoce las cinco fases, las herramientas de análisis y el equipo con los que Synnergy Lab convierte estrategia en ejecución." />
   <meta property="og:url" content="https://synnergylab.com/es/nosotros/" />
-  <meta property="og:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.jpg" />
+  <meta property="og:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.webp" />
   <meta property="og:image:alt" content="Aurelio Crespo, estratega de marca de Synnergy Lab" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Método y equipo | Synnergy Lab" />
   <meta name="twitter:description"
     content="Conoce las cinco fases, las herramientas de análisis y el equipo con los que Synnergy Lab convierte estrategia en ejecución." />
-  <meta name="twitter:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.jpg" />
+  <meta name="twitter:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.webp" />
   <meta name="twitter:image:alt" content="Aurelio Crespo, estratega de marca de Synnergy Lab" />
   <script type="application/ld+json">
 {
@@ -66,7 +66,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://synnergylab.com/assets/img/team/aurelio.jpg"
+        "url": "https://synnergylab.com/assets/img/team/aurelio.webp"
       },
       "inLanguage": "es"
     },
@@ -78,7 +78,7 @@
       "worksFor": {
         "@id": "https://synnergylab.com/#organization"
       },
-      "image": "https://synnergylab.com/assets/img/team/aurelio.jpg"
+      "image": "https://synnergylab.com/assets/img/team/aurelio.webp"
     }
   ]
 }
@@ -129,47 +129,8 @@
         <p class="section-kicker">Equipo</p>
         <h2>Nuestro equipo</h2>
       </div>
-      <div class="container card-grid team-grid" data-team-grid>
-        <article class="card team-card">
-          <div class="team-card__summary">
-            <div class="team-card__photo"><img src="../../assets/img/team/aurelio.jpg" alt="Aurelio Crespo — Estratega de Marca" loading="lazy" decoding="async" /></div>
-            <div class="team-card__info"><h3 class="card__title">Aurelio Crespo</h3><p class="team-card__role">Estratega de Marca</p></div>
-            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-aurelio" aria-label="Ver perfil ampliado de Aurelio Crespo"><span aria-hidden="true">+</span></button>
-          </div>
-          <div class="team-card__details" id="perfil-aurelio" hidden><p>Información ampliada en preparación.</p></div>
-        </article>
-        <article class="card team-card">
-          <div class="team-card__summary">
-            <div class="team-card__photo"><img src="../../assets/img/team/lázaro.jpg" alt="Lázaro Pina — Desarrollador Web" loading="lazy" decoding="async" /></div>
-            <div class="team-card__info"><h3 class="card__title">Lázaro Pina</h3><p class="team-card__role">Desarrollador Web</p></div>
-            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-lazaro" aria-label="Ver perfil ampliado de Lázaro Pina"><span aria-hidden="true">+</span></button>
-          </div>
-          <div class="team-card__details" id="perfil-lazaro" hidden><p>Información ampliada en preparación.</p></div>
-        </article>
-        <article class="card team-card">
-          <div class="team-card__summary">
-            <div class="team-card__photo"><img src="../../assets/img/team/tony.jpg" alt="Antonio León — Manager Comercial" loading="lazy" decoding="async" /></div>
-            <div class="team-card__info"><h3 class="card__title">Antonio León</h3><p class="team-card__role">Manager Comercial</p></div>
-            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-antonio" aria-label="Ver perfil ampliado de Antonio León"><span aria-hidden="true">+</span></button>
-          </div>
-          <div class="team-card__details" id="perfil-antonio" hidden><p>Información ampliada en preparación.</p></div>
-        </article>
-        <article class="card team-card">
-          <div class="team-card__summary">
-            <div class="team-card__photo"><img src="../../assets/img/team/amy.jpg" alt="Amanda Prieto — Diseñadora Gráfica" loading="lazy" decoding="async" /></div>
-            <div class="team-card__info"><h3 class="card__title">Amanda Prieto</h3><p class="team-card__role">Diseñadora Gráfica</p></div>
-            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-amanda" aria-label="Ver perfil ampliado de Amanda Prieto"><span aria-hidden="true">+</span></button>
-          </div>
-          <div class="team-card__details" id="perfil-amanda" hidden><p>Información ampliada en preparación.</p></div>
-        </article>
-        <article class="card team-card">
-          <div class="team-card__summary">
-            <div class="team-card__photo"><img src="../../assets/img/team/sam.jpg" alt="Samuel Rodríguez — Analista de Datos" loading="lazy" decoding="async" /></div>
-            <div class="team-card__info"><h3 class="card__title">Samuel Rodríguez</h3><p class="team-card__role">Analista de Datos</p></div>
-            <button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="perfil-samuel" aria-label="Ver perfil ampliado de Samuel Rodríguez"><span aria-hidden="true">+</span></button>
-          </div>
-          <div class="team-card__details" id="perfil-samuel" hidden><p>Información ampliada en preparación.</p></div>
-        </article>
+      <div class="container card-grid team-grid" id="dynamic-team" data-team-grid aria-busy="true">
+        <!-- Carga dinámica vía data-loader.js desde data/team.json -->
       </div>
     </section>
 
@@ -181,29 +142,108 @@
       <div class="container process-flow" data-process-flow>
         <div class="process-tabs">
           <div class="process-tablist" role="tablist" aria-label="Fases de la metodología">
-            <button class="process-tab" type="button" role="tab" id="tab-diagnostico" aria-selected="true" aria-controls="diagnostico-digital"><span>01</span><strong>Diagnóstico</strong></button>
-            <button class="process-tab" type="button" role="tab" id="tab-marca" aria-selected="false" aria-controls="diseno-marca"><span>02</span><strong>Marca</strong></button>
-            <button class="process-tab" type="button" role="tab" id="tab-ventas" aria-selected="false" aria-controls="sistema-ventas"><span>03</span><strong>Ventas</strong></button>
-            <button class="process-tab" type="button" role="tab" id="tab-lanzamiento" aria-selected="false" aria-controls="lanzamiento-campana"><span>04</span><strong>Lanzamiento</strong></button>
-            <button class="process-tab" type="button" role="tab" id="tab-analisis" aria-selected="false" aria-controls="analisis-optimizacion"><span>05</span><strong>Análisis</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-diagnostico" aria-selected="true"
+              aria-controls="diagnostico-digital"><span>01</span><strong>Diagnóstico</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-marca" aria-selected="false"
+              aria-controls="diseno-marca"><span>02</span><strong>Marca</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-ventas" aria-selected="false"
+              aria-controls="sistema-ventas"><span>03</span><strong>Ventas</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-lanzamiento" aria-selected="false"
+              aria-controls="lanzamiento-campana"><span>04</span><strong>Lanzamiento</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-analisis" aria-selected="false"
+              aria-controls="analisis-optimizacion"><span>05</span><strong>Análisis</strong></button>
           </div>
         </div>
         <div class="process-panels">
-          <article class="process-panel" id="diagnostico-digital" role="tabpanel" aria-labelledby="tab-diagnostico"><span class="process-panel__number">01</span><div><h3>Diagnóstico Digital</h3><p>Se estudian negocio, mercado, presencia digital, ventas y capacidad operativa para detectar fricciones y ordenar prioridades.</p></div></article>
-          <article class="process-panel" id="diseno-marca" role="tabpanel" aria-labelledby="tab-marca"><span class="process-panel__number">02</span><div><h3>Diseño de Marca</h3><p>Se construye o corrige la identidad estratégica, verbal y visual que la empresa necesita para comunicar con coherencia.</p></div></article>
-          <article class="process-panel" id="sistema-ventas" role="tabpanel" aria-labelledby="tab-ventas"><span class="process-panel__number">03</span><div><h3>Sistema de Ventas</h3><p>Se conecta la captación con la conversión mediante funnel, activos, seguimiento y un calendario alineado con el recorrido del público.</p></div></article>
-          <article class="process-panel" id="lanzamiento-campana" role="tabpanel" aria-labelledby="tab-lanzamiento"><span class="process-panel__number">04</span><div><h3>Lanzamiento de Campaña</h3><p>La campaña se activa con acompañamiento, supervisión y ajustes. Lanzar no es pulsar un botón y cruzar los dedos.</p></div></article>
-          <article class="process-panel" id="analisis-optimizacion" role="tabpanel" aria-labelledby="tab-analisis"><span class="process-panel__number">05</span><div><h3>Análisis y Optimización</h3><p>Los resultados se interpretan para identificar aprendizajes, priorizar mejoras y definir el siguiente ciclo.</p></div></article>
+          <article class="process-panel" id="diagnostico-digital" role="tabpanel" aria-labelledby="tab-diagnostico">
+            <span class="process-panel__number">01</span>
+            <div>
+              <h3>Diagnóstico Digital</h3>
+              <p>Se estudian negocio, mercado, presencia digital, ventas y capacidad operativa para detectar fricciones
+                y ordenar prioridades.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="diseno-marca" role="tabpanel" aria-labelledby="tab-marca"><span
+              class="process-panel__number">02</span>
+            <div>
+              <h3>Diseño de Marca</h3>
+              <p>Se construye o corrige la identidad estratégica, verbal y visual que la empresa necesita para comunicar
+                con coherencia.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="sistema-ventas" role="tabpanel" aria-labelledby="tab-ventas"><span
+              class="process-panel__number">03</span>
+            <div>
+              <h3>Sistema de Ventas</h3>
+              <p>Se conecta la captación con la conversión mediante funnel, activos, seguimiento y un calendario
+                alineado con el recorrido del público.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="lanzamiento-campana" role="tabpanel" aria-labelledby="tab-lanzamiento">
+            <span class="process-panel__number">04</span>
+            <div>
+              <h3>Lanzamiento de Campaña</h3>
+              <p>La campaña se activa con acompañamiento, supervisión y ajustes. Lanzar no es pulsar un botón y cruzar
+                los dedos.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="analisis-optimizacion" role="tabpanel" aria-labelledby="tab-analisis"><span
+              class="process-panel__number">05</span>
+            <div>
+              <h3>Análisis y Optimización</h3>
+              <p>Los resultados se interpretan para identificar aprendizajes, priorizar mejoras y definir el siguiente
+                ciclo.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="content-section" id="herramientas">
-      <div class="container section-heading"><p class="section-kicker">Herramientas de trabajo</p><h2>La metodología se adapta al problema, no al revés</h2></div>
-      <div class="container content-grid">
-        <article class="content-block"><h3>FODA y benchmarking</h3><p>Ayudan a leer la situación interna, el mercado y las referencias competitivas antes de definir una dirección.</p></article>
-        <article class="content-block"><h3>Customer Journey y funnel</h3><p>Permiten conectar mensajes, canales y puntos de conversión con cada etapa del recorrido del cliente.</p></article>
-        <article class="content-block"><h3>Ciclos de aprendizaje</h3><p>La medición, los feedback loops y las pruebas controladas convierten la ejecución en mejoras concretas.</p></article>
+      <div class="container section-heading">
+        <p class="section-kicker">Herramientas de trabajo</p>
+        <h2>La metodología se adapta al problema, no al revés</h2>
+      </div>
+      <div class="container method-articles" data-method-articles>
+        <article class="content-block method-article">
+          <h3>FODA y benchmarking</h3>
+          <p class="method-article__summary">Entender el negocio exige mirar hacia dentro y hacia fuera.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="metodo-foda">
+            <span class="method-article__label">Leer más</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="metodo-foda" hidden>
+            <div class="method-article__details-inner">
+              <p>Un análisis FODA solo aporta valor cuando deja de ser una lista genérica de fortalezas y amenazas. En Synnergy Lab se utiliza para identificar capacidades reales, limitaciones operativas y ventajas que puedan convertirse en decisiones. El objetivo es separar lo que el negocio cree de sí mismo de aquello que realmente puede sostener frente al mercado.</p>
+              <p>El benchmarking completa esa lectura mirando hacia fuera. No consiste en copiar a la competencia, sino en entender cómo se posiciona el mercado, qué expectativas ya tiene el cliente y dónde existe espacio para diferenciarse. Al cruzar ambos análisis se obtiene una base más sólida para decidir qué conservar, qué corregir y dónde invertir recursos antes de ejecutar.</p>
+            </div>
+          </div>
+        </article>
+        <article class="content-block method-article">
+          <h3>Customer Journey y funnel</h3>
+          <p class="method-article__summary">Cada acción debe responder a una etapa concreta del recorrido del cliente.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="metodo-journey">
+            <span class="method-article__label">Leer más</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="metodo-journey" hidden>
+            <div class="method-article__details-inner">
+              <p>El Customer Journey permite observar cómo cambia la necesidad de una persona desde que descubre una marca hasta que decide comprar, repetir o recomendarla. Cada etapa contiene preguntas, fricciones y expectativas diferentes. Por eso un mismo mensaje no debería intentar resolver simultáneamente notoriedad, confianza y conversión.</p>
+              <p>El funnel convierte ese recorrido en una arquitectura operativa. Conecta contenido, anuncios, páginas, formularios, seguimiento y ventas para que cada punto de contacto prepare el siguiente. El objetivo no es construir embudos complicados, sino reducir pérdidas entre etapas y saber exactamente qué función cumple cada activo dentro del sistema comercial.</p>
+            </div>
+          </div>
+        </article>
+        <article class="content-block method-article">
+          <h3>Ciclos de aprendizaje</h3>
+          <p class="method-article__summary">Ejecutar produce datos; analizarlos debe producir mejores decisiones.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="metodo-ciclos">
+            <span class="method-article__label">Leer más</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="metodo-ciclos" hidden>
+            <div class="method-article__details-inner">
+              <p>Una campaña no termina cuando se publica. Desde ese momento comienza una fase distinta: observar qué ocurrió, interpretar por qué ocurrió y distinguir una señal real de una fluctuación puntual. Métricas aisladas rara vez explican el negocio; necesitan contexto, comparación y relación con los objetivos definidos antes de ejecutar.</p>
+              <p>Los ciclos de aprendizaje convierten esa información en la siguiente decisión. Una hipótesis se ejecuta, se mide y se ajusta mediante cambios controlados. Así, cada proyecto deja conocimiento reutilizable en lugar de limitarse a producir entregables. La optimización deja de ser una reacción improvisada y se convierte en una parte permanente del sistema.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>

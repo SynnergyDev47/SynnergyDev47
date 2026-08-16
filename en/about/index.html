@@ -17,7 +17,7 @@
   <meta property="og:description"
     content="Explore the five phases, analysis tools, and team Synnergy Lab uses to turn strategy into coordinated execution." />
   <meta property="og:url" content="https://synnergylab.com/en/about/" />
-  <meta property="og:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.jpg" />
+  <meta property="og:image" content="https://synnergydev47.github.io/SynnergyDev47/assets/img/team/aurelio.webp" />
   <meta property="og:image:alt" content="Aurelio Crespo, brand strategist at Synnergy Lab" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Method and team | Synnergy Lab" />
@@ -66,7 +66,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://synnergylab.com/assets/img/team/aurelio.jpg"
+        "url": "https://synnergylab.com/assets/img/team/aurelio.webp"
       },
       "inLanguage": "en"
     },
@@ -78,7 +78,7 @@
       "worksFor": {
         "@id": "https://synnergylab.com/#organization"
       },
-      "image": "https://synnergylab.com/assets/img/team/aurelio.jpg"
+      "image": "https://synnergylab.com/assets/img/team/aurelio.webp"
     }
   ]
 }
@@ -129,13 +129,12 @@
     </section>
 
     <section class="content-section" id="team">
-      <div class="container section-heading"><p class="section-kicker">Team</p><h2>Our team</h2></div>
-      <div class="container card-grid team-grid" data-team-grid>
-        <article class="card team-card"><div class="team-card__summary"><div class="team-card__photo"><img src="../../assets/img/team/aurelio.jpg" alt="Aurelio Crespo — Brand Strategist" loading="lazy" decoding="async" /></div><div class="team-card__info"><h3 class="card__title">Aurelio Crespo</h3><p class="team-card__role">Brand Strategist</p></div><button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="profile-aurelio" aria-label="View Aurelio Crespo's extended profile"><span aria-hidden="true">+</span></button></div><div class="team-card__details" id="profile-aurelio" hidden><p>Extended profile in preparation.</p></div></article>
-        <article class="card team-card"><div class="team-card__summary"><div class="team-card__photo"><img src="../../assets/img/team/lázaro.jpg" alt="Lázaro Pina — Web Designer" loading="lazy" decoding="async" /></div><div class="team-card__info"><h3 class="card__title">Lázaro Pina</h3><p class="team-card__role">Web Designer</p></div><button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="profile-lazaro" aria-label="View Lázaro Pina's extended profile"><span aria-hidden="true">+</span></button></div><div class="team-card__details" id="profile-lazaro" hidden><p>Extended profile in preparation.</p></div></article>
-        <article class="card team-card"><div class="team-card__summary"><div class="team-card__photo"><img src="../../assets/img/team/tony.jpg" alt="Antonio León — Business Manager" loading="lazy" decoding="async" /></div><div class="team-card__info"><h3 class="card__title">Antonio León</h3><p class="team-card__role">Business Manager</p></div><button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="profile-antonio" aria-label="View Antonio León's extended profile"><span aria-hidden="true">+</span></button></div><div class="team-card__details" id="profile-antonio" hidden><p>Extended profile in preparation.</p></div></article>
-        <article class="card team-card"><div class="team-card__summary"><div class="team-card__photo"><img src="../../assets/img/team/amy.jpg" alt="Amanda Prieto — Lead Designer" loading="lazy" decoding="async" /></div><div class="team-card__info"><h3 class="card__title">Amanda Prieto</h3><p class="team-card__role">Lead Designer</p></div><button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="profile-amanda" aria-label="View Amanda Prieto's extended profile"><span aria-hidden="true">+</span></button></div><div class="team-card__details" id="profile-amanda" hidden><p>Extended profile in preparation.</p></div></article>
-        <article class="card team-card"><div class="team-card__summary"><div class="team-card__photo"><img src="../../assets/img/team/sam.jpg" alt="Samuel Rodríguez — Data Analyst" loading="lazy" decoding="async" /></div><div class="team-card__info"><h3 class="card__title">Samuel Rodríguez</h3><p class="team-card__role">Data Analyst</p></div><button class="team-card__toggle" type="button" aria-expanded="false" aria-controls="profile-samuel" aria-label="View Samuel Rodríguez's extended profile"><span aria-hidden="true">+</span></button></div><div class="team-card__details" id="profile-samuel" hidden><p>Extended profile in preparation.</p></div></article>
+      <div class="container section-heading">
+        <p class="section-kicker">Team</p>
+        <h2>Our team</h2>
+      </div>
+      <div class="container card-grid team-grid" id="dynamic-team" data-team-grid aria-busy="true">
+        <!-- Dynamically loaded by data-loader.js from data/team.json -->
       </div>
     </section>
 
@@ -146,19 +145,60 @@
         <h2>Each phase prepares the next</h2>
       </div>
       <div class="container process-flow" data-process-flow>
-        <div class="process-tabs"><div class="process-tablist" role="tablist" aria-label="Methodology phases">
-          <button class="process-tab" type="button" role="tab" id="tab-diagnosis" aria-selected="true" aria-controls="digital-diagnosis"><span>01</span><strong>Diagnosis</strong></button>
-          <button class="process-tab" type="button" role="tab" id="tab-brand" aria-selected="false" aria-controls="brand-design"><span>02</span><strong>Brand</strong></button>
-          <button class="process-tab" type="button" role="tab" id="tab-sales" aria-selected="false" aria-controls="sales-system"><span>03</span><strong>Sales</strong></button>
-          <button class="process-tab" type="button" role="tab" id="tab-launch" aria-selected="false" aria-controls="campaign-launch"><span>04</span><strong>Launch</strong></button>
-          <button class="process-tab" type="button" role="tab" id="tab-analysis" aria-selected="false" aria-controls="analysis-optimization"><span>05</span><strong>Analysis</strong></button>
-        </div></div>
+        <div class="process-tabs">
+          <div class="process-tablist" role="tablist" aria-label="Methodology phases">
+            <button class="process-tab" type="button" role="tab" id="tab-diagnosis" aria-selected="true"
+              aria-controls="digital-diagnosis"><span>01</span><strong>Diagnosis</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-brand" aria-selected="false"
+              aria-controls="brand-design"><span>02</span><strong>Brand</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-sales" aria-selected="false"
+              aria-controls="sales-system"><span>03</span><strong>Sales</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-launch" aria-selected="false"
+              aria-controls="campaign-launch"><span>04</span><strong>Launch</strong></button>
+            <button class="process-tab" type="button" role="tab" id="tab-analysis" aria-selected="false"
+              aria-controls="analysis-optimization"><span>05</span><strong>Analysis</strong></button>
+          </div>
+        </div>
         <div class="process-panels">
-          <article class="process-panel" id="digital-diagnosis" role="tabpanel" aria-labelledby="tab-diagnosis"><span class="process-panel__number">01</span><div><h3>Digital Diagnosis</h3><p>We study the business, market, digital presence, sales, and operating capacity to identify friction and set priorities.</p></div></article>
-          <article class="process-panel" id="brand-design" role="tabpanel" aria-labelledby="tab-brand"><span class="process-panel__number">02</span><div><h3>Brand Design</h3><p>We build or correct the strategic, verbal, and visual identity the company needs to communicate coherently.</p></div></article>
-          <article class="process-panel" id="sales-system" role="tabpanel" aria-labelledby="tab-sales"><span class="process-panel__number">03</span><div><h3>Sales System</h3><p>We connect acquisition and conversion through the funnel, key assets, follow-up, and content aligned with the customer journey.</p></div></article>
-          <article class="process-panel" id="campaign-launch" role="tabpanel" aria-labelledby="tab-launch"><span class="process-panel__number">04</span><div><h3>Campaign Launch</h3><p>The campaign launches with support, supervision, and adjustments. Launching is more than pressing a button and hoping for the best.</p></div></article>
-          <article class="process-panel" id="analysis-optimization" role="tabpanel" aria-labelledby="tab-analysis"><span class="process-panel__number">05</span><div><h3>Analysis and Optimization</h3><p>We interpret results to capture lessons, prioritize improvements, and define the next cycle.</p></div></article>
+          <article class="process-panel" id="digital-diagnosis" role="tabpanel" aria-labelledby="tab-diagnosis"><span
+              class="process-panel__number">01</span>
+            <div>
+              <h3>Digital Diagnosis</h3>
+              <p>We study the business, market, digital presence, sales, and operating capacity to identify friction and
+                set priorities.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="brand-design" role="tabpanel" aria-labelledby="tab-brand"><span
+              class="process-panel__number">02</span>
+            <div>
+              <h3>Brand Design</h3>
+              <p>We build or correct the strategic, verbal, and visual identity the company needs to communicate
+                coherently.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="sales-system" role="tabpanel" aria-labelledby="tab-sales"><span
+              class="process-panel__number">03</span>
+            <div>
+              <h3>Sales System</h3>
+              <p>We connect acquisition and conversion through the funnel, key assets, follow-up, and content aligned
+                with the customer journey.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="campaign-launch" role="tabpanel" aria-labelledby="tab-launch"><span
+              class="process-panel__number">04</span>
+            <div>
+              <h3>Campaign Launch</h3>
+              <p>The campaign launches with support, supervision, and adjustments. Launching is more than pressing a
+                button and hoping for the best.</p>
+            </div>
+          </article>
+          <article class="process-panel" id="analysis-optimization" role="tabpanel" aria-labelledby="tab-analysis"><span
+              class="process-panel__number">05</span>
+            <div>
+              <h3>Analysis and Optimization</h3>
+              <p>We interpret results to capture lessons, prioritize improvements, and define the next cycle.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -168,19 +208,45 @@
         <p class="section-kicker">Working tools</p>
         <h2>The method adapts to the problem, not the other way around</h2>
       </div>
-      <div class="container content-grid">
-        <article class="content-block">
+      <div class="container method-articles" data-method-articles>
+        <article class="content-block method-article">
           <h3>SWOT and benchmarking</h3>
-          <p>They help us understand the internal situation, market, and competitive references before setting
-            direction.</p>
+          <p class="method-article__summary">Understanding a business requires looking both inward and outward.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="method-swot">
+            <span class="method-article__label">Read more</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="method-swot" hidden>
+            <div class="method-article__details-inner">
+              <p>A SWOT analysis only becomes useful when it moves beyond a generic list of strengths and threats. At Synnergy Lab, it helps identify real capabilities, operating constraints, and advantages that can guide decisions. The aim is to separate what a business believes about itself from what it can genuinely sustain in the market.</p>
+              <p>Benchmarking completes that view by looking outward. It is not about copying competitors, but understanding how the market is positioned, what customers already expect, and where meaningful differentiation is possible. Together, both analyses create a stronger basis for deciding what to preserve, what to correct, and where to invest before execution begins.</p>
+            </div>
+          </div>
         </article>
-        <article class="content-block">
+        <article class="content-block method-article">
           <h3>Customer journey and funnel</h3>
-          <p>They connect messages, channels, and conversion points with each stage of the customer's path.</p>
+          <p class="method-article__summary">Every action should serve a specific stage of the customer journey.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="method-journey">
+            <span class="method-article__label">Read more</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="method-journey" hidden>
+            <div class="method-article__details-inner">
+              <p>The customer journey shows how a person's needs change from discovering a brand to choosing to buy, return, or recommend it. Each stage brings different questions, friction points, and expectations. One message should not be expected to create awareness, earn trust, and drive conversion all at once.</p>
+              <p>The funnel turns that journey into an operating structure. It connects content, ads, pages, forms, follow-up, and sales so each touchpoint prepares the next. The goal is not to build a complicated funnel, but to reduce losses between stages and define exactly what every asset contributes to the commercial system.</p>
+            </div>
+          </div>
         </article>
-        <article class="content-block">
+        <article class="content-block method-article">
           <h3>Learning cycles</h3>
-          <p>Measurement, feedback loops, and controlled tests turn execution into concrete improvements.</p>
+          <p class="method-article__summary">Execution produces data; analysis should produce better decisions.</p>
+          <button class="method-article__toggle" type="button" aria-expanded="false" aria-controls="method-learning">
+            <span class="method-article__label">Read more</span><span aria-hidden="true">+</span>
+          </button>
+          <div class="method-article__details" id="method-learning" hidden>
+            <div class="method-article__details-inner">
+              <p>A campaign does not end when it goes live. That moment begins a different phase: observing what happened, interpreting why, and separating a real signal from a temporary fluctuation. Isolated metrics rarely explain a business; they need context, comparison, and a clear relationship to the objectives set before execution.</p>
+              <p>Learning cycles turn that information into the next decision. A hypothesis is tested, measured, and refined through controlled changes. Each project then leaves reusable knowledge instead of only producing deliverables. Optimization becomes a permanent part of the system rather than an improvised reaction.</p>
+            </div>
+          </div>
         </article>
       </div>
     </section>

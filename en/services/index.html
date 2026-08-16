@@ -6,19 +6,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- El título y la descripción se adaptan a la ruta actual y mantienen coherencia semántica con la navegación interna. -->
-    <title>Strategic marketing plans | Synnergy Lab</title>
-    <meta name="description" content="Three plans to build a brand, transform the marketing system, or launch a campaign with direction and measurement." />
+    <title>Growth plans and Retainer | Synnergy Lab</title>
+    <meta name="description" content="Plans to build a brand, launch a campaign, or transform the complete system, plus ongoing Retainer support for existing clients." />
     <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Synnergy Lab" />
-  <meta property="og:title" content="Strategic marketing plans | Synnergy Lab" />
-  <meta property="og:description" content="Three plans to build a brand, transform the marketing system, or launch a campaign with direction and measurement." />
+  <meta property="og:title" content="Growth plans and Retainer | Synnergy Lab" />
+  <meta property="og:description" content="Plans to build a brand, launch a campaign, or transform the complete system, plus ongoing Retainer support for existing clients." />
   <meta property="og:url" content="https://synnergylab.com/en/services/" />
   <meta property="og:image" content="https://synnergylab.com/assets/img/branding/synnergy-lab-logo-color.svg" />
   <meta property="og:image:alt" content="Logo a color de Synnergy Lab" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Strategic marketing plans | Synnergy Lab" />
-  <meta name="twitter:description" content="Three plans to build a brand, transform the marketing system, or launch a campaign with direction and measurement." />
+  <meta name="twitter:title" content="Growth plans and Retainer | Synnergy Lab" />
+  <meta name="twitter:description" content="Plans to build a brand, launch a campaign, or transform the complete system, plus ongoing Retainer support for existing clients." />
   <meta name="twitter:image" content="https://synnergylab.com/assets/img/branding/synnergy-lab-logo-color.svg" />
   <meta name="twitter:image:alt" content="Logo a color de Synnergy Lab" />
   <script type="application/ld+json">
@@ -52,8 +52,8 @@
       "@type": "CollectionPage",
       "@id": "https://synnergylab.com/en/services/#webpage",
       "url": "https://synnergylab.com/en/services/",
-      "name": "Strategic marketing plans | Synnergy Lab",
-      "description": "Three plans to build a brand, transform the marketing system, or launch a campaign with direction and measurement.",
+      "name": "Growth plans and Retainer | Synnergy Lab",
+      "description": "Plans to build a brand, launch a campaign, or transform the complete system, plus ongoing Retainer support for existing clients.",
       "isPartOf": {
         "@id": "https://synnergylab.com/#website"
       },
@@ -84,42 +84,30 @@
 
     <!-- Contenido principal: agrupa bloques funcionales de valor (hero + contenido) y sirve como referencia para accesibilidad. -->
     <main id="main-content">
-      <!-- Hero: presenta la propuesta central de la ruta actual y orienta al usuario hacia acciones prioritarias mediante CTAs. -->
-      <section class="hero-section">
-        <div class="container hero-grid">
-          <!-- Mensaje principal del hero: título, contexto y narrativa alineada con el objetivo de esta página dentro del embudo. -->
-          <div class="hero-copy">
-            <h1>Three plans. One strategic direction.</h1>
-            <p class="eyebrow">Core offer</p>
-            <p class="lead">Each plan responds to a different business moment: building a coherent brand, transforming the complete system, or launching a campaign with judgment.</p>
-            <!-- Acciones clave: conectan con rutas internas estratégicas (contacto, servicios, proyectos, etc.) para sostener la navegación. -->
-            <div class="button-row">
-              <a class="button button-primary" href="../contact/">Request a diagnosis</a>
-              <a class="button button-secondary" href="../projects/">See results</a>
-            </div>
-          </div>
-          <!-- Panel complementario del hero: resume beneficios/cobertura y refuerza lo expuesto en el bloque principal. -->
-          <aside class="hero-panel card page-toc">
-            <h2>On this page</h2>
-            <nav aria-label="Sections on this page"><ul class="feature-list">
-              <li><a href="#service-nueva-marca">New Brand</a></li>
-              <li><a href="#service-integral">Comprehensive</a></li>
-              <li><a href="#service-campana">Campaign</a></li>
-            </ul></nav>
-          </aside>
+      <section class="services-section" aria-labelledby="services-title">
+        <div class="container services-heading">
+          <p class="section-kicker">Service plans</p>
+          <h1 id="services-title">Plans built for focused growth</h1>
+        </div>
+        <div class="container pricing-grid" id="dynamic-services" aria-live="polite">
+          <!-- Dynamically loaded by data-loader.js from data/services.json -->
         </div>
       </section>
 
-      <!-- Sección de desarrollo: profundiza lo prometido en el hero con bloques modulares que mantienen el mismo sistema visual. -->
-      <section class="content-section">
-        <!-- Encabezado de sección: introduce el tema del bloque de tarjetas para que el contenido conserve jerarquía semántica. -->
-        <div class="container section-heading">
-          <p class="section-kicker">Engagement plans</p>
-          <h2>The right scope depends on the starting point</h2>
+      <section class="retainer-section" aria-label="Ongoing support for existing clients">
+        <div class="container" id="dynamic-retainer" aria-live="polite">
+          <!-- Dynamically loaded by data-loader.js from data/retainer.json -->
         </div>
-        <!-- Rejilla de tarjetas: estructura información en unidades paralelas para facilitar lectura, comparación y escalabilidad. -->
-        <div class="container pricing-grid" id="dynamic-services">
-          <!-- Carga dinámica vía data-loader.js -->
+      </section>
+
+      <section class="projects-transition" aria-labelledby="projects-transition-title">
+        <div class="container projects-transition__inner">
+          <div>
+            <p class="section-kicker">Published work</p>
+            <h2 id="projects-transition-title">See the strategy applied</h2>
+            <p>The plans describe the process. The projects show how that thinking translates into real work.</p>
+          </div>
+          <a class="button button-secondary" href="../projects/">View completed projects</a>
         </div>
       </section>
     </main>

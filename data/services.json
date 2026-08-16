@@ -2,16 +2,16 @@
   {
     "id": "nueva-marca",
     "title": {
-      "es": "Nueva Marca",
-      "en": "New Brand"
+      "es": "Fundacional",
+      "en": "Foundational"
     },
     "kicker": {
-      "es": "Construcción o rebranding",
-      "en": "Brand building or rebranding"
+      "es": "Marca con una base estratégica",
+      "en": "A brand built on strategy"
     },
     "description": {
-      "es": "Para negocios que necesitan construir, completar o corregir su marca. Incluye diagnóstico, posicionamiento, propuesta de valor y una base visual y verbal coherente, lista para operar.",
-      "en": "For businesses that need to build, complete, or correct their brand. It covers diagnosis, positioning, value proposition, and a coherent verbal and visual foundation ready to use."
+      "es": "Para negocios que necesitan crear, completar o corregir su marca. Ordena la situación, el mercado, el público y el posicionamiento antes de construir una propuesta de valor, una voz y una identidad visual coherentes.",
+      "en": "For businesses that need to create, complete, or correct their brand. It clarifies the situation, market, audience, and positioning before building a coherent value proposition, voice, and visual identity."
     },
     "price": {
       "amount": 299,
@@ -23,23 +23,23 @@
     },
     "pricingStatus": "prototype",
     "features": {
-      "es": ["Diagnóstico", "Posicionamiento", "Propuesta de valor", "Identidad verbal", "Identidad visual"],
-      "en": ["Diagnosis", "Positioning", "Value proposition", "Verbal identity", "Visual identity"]
+      "es": ["Diagnóstico Digital", "Diseño o Rediseño de Marca"],
+      "en": ["Digital Diagnosis", "Brand Design or Redesign"]
     }
   },
   {
     "id": "integral",
     "title": {
-      "es": "Integral",
-      "en": "Comprehensive"
+      "es": "Transformación",
+      "en": "Transformation"
     },
     "kicker": {
-      "es": "Sistema completo",
-      "en": "Complete system"
+      "es": "El recorrido completo",
+      "en": "The complete journey"
     },
     "description": {
-      "es": "Una intervención profunda que conecta diagnóstico, marca, sistema de ventas, contenido, lanzamiento y análisis. Está pensado para empresas que necesitan transformar el conjunto, no sumar piezas aisladas.",
-      "en": "A deep engagement connecting diagnosis, brand, sales system, content, launch, and analysis. It is designed for companies that need to transform the whole system, not add isolated pieces."
+      "es": "Una intervención profunda que conecta las cinco fases para transformar el sistema completo, no sumar piezas aisladas.",
+      "en": "A deep engagement connecting all five phases to transform the complete system, rather than add isolated pieces."
     },
     "price": {
       "amount": 899,
@@ -52,12 +52,12 @@
     "pricingStatus": "prototype",
     "featured": true,
     "featuredLabel": {
-      "es": "Más completo",
-      "en": "Most complete"
+      "es": "Completo",
+      "en": "Complete"
     },
     "features": {
-      "es": ["Diagnóstico", "Marca", "Sistema de ventas", "Contenido", "Lanzamiento", "Análisis"],
-      "en": ["Diagnosis", "Brand", "Sales system", "Content", "Launch", "Analysis"]
+      "es": ["Diagnóstico Digital", "Diseño o Rediseño de Marca", "Sistema de Ventas", "Lanzamiento de Campaña", "Análisis y Optimización"],
+      "en": ["Digital Diagnosis", "Brand Design or Redesign", "Sales System", "Campaign Launch", "Analysis and Optimization"]
     }
   },
   {
@@ -67,12 +67,12 @@
       "en": "Campaign"
     },
     "kicker": {
-      "es": "Lanzamiento y validación",
-      "en": "Launch and validation"
+      "es": "Una iniciativa comercial concreta",
+      "en": "A focused commercial initiative"
     },
     "description": {
-      "es": "Para marcas establecidas que preparan una iniciativa concreta. Validamos la base, estructuramos el funnel, coordinamos el lanzamiento y acompañamos la campaña para observar, ajustar y aprender.",
-      "en": "For established brands preparing a specific initiative. We validate the foundation, structure the funnel, coordinate the launch, and support the campaign to observe, adjust, and learn."
+      "es": "Para marcas establecidas que necesitan convertir una iniciativa concreta en un lanzamiento coordinado y medible.",
+      "en": "For established brands that need to turn a specific initiative into a coordinated, measurable launch."
     },
     "price": {
       "amount": 499,
@@ -84,8 +84,8 @@
     },
     "pricingStatus": "prototype",
     "features": {
-      "es": ["Validación de la base", "Funnel", "Preparación del lanzamiento", "Acompañamiento", "Observación y ajustes"],
-      "en": ["Foundation validation", "Funnel", "Launch preparation", "Support", "Observation and adjustments"]
+      "es": ["Diagnóstico Digital", "Sistema de Ventas", "Lanzamiento de Campaña", "Análisis y Optimización"],
+      "en": ["Digital Diagnosis", "Sales System", "Campaign Launch", "Analysis and Optimization"]
     }
   }
 ]

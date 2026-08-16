@@ -1,0 +1,238 @@
+[
+  {
+    "id": "aurelio",
+    "name": "Aurelio Crespo",
+    "image": {
+      "src": "assets/img/team/aurelio.webp",
+      "alt": {
+        "es": "Aurelio Crespo — Estratega de Marca",
+        "en": "Aurelio Crespo — Brand Strategist"
+      }
+    },
+    "role": {
+      "es": "Estratega de Marca",
+      "en": "Brand Strategist"
+    },
+    "description": {
+      "es": "Responsable de la dirección estratégica de Synnergy Lab. Su trabajo conecta análisis de negocio, posicionamiento, marketing, comunicación y desarrollo de sistemas comerciales para convertir objetivos empresariales en acciones estructuradas y medibles.",
+      "en": "Responsible for Synnergy Lab's strategic direction. His work connects business analysis, positioning, marketing, communication, and commercial systems to turn business objectives into structured and measurable actions."
+    },
+    "certification": {
+      "es": "Google Digital Marketing & E-commerce Professional Certificate",
+      "en": "Google Digital Marketing & E-commerce Professional Certificate"
+    },
+    "skills": {
+      "es": [
+        "Estrategia de marketing",
+        "Estrategia de marca",
+        "Posicionamiento",
+        "Marketing digital",
+        "Investigación de mercado",
+        "Customer Journey",
+        "Funnels de conversión",
+        "Estrategia de contenidos",
+        "Analítica de marketing",
+        "Optimización basada en datos"
+      ],
+      "en": [
+        "Marketing Strategy",
+        "Brand Strategy",
+        "Positioning",
+        "Digital Marketing",
+        "Market Research",
+        "Customer Journey",
+        "Conversion Funnels",
+        "Content Strategy",
+        "Marketing Analytics",
+        "Data-Driven Optimization"
+      ]
+    }
+  },
+  {
+    "id": "lazaro",
+    "name": "Lázaro Pina",
+    "image": {
+      "src": "assets/img/team/lázaro.webp",
+      "alt": {
+        "es": "Lázaro Pina — Desarrollador Web",
+        "en": "Lázaro Pina — Web Developer"
+      }
+    },
+    "role": {
+      "es": "Desarrollador Web",
+      "en": "Web Developer"
+    },
+    "description": {
+      "es": "Responsable del desarrollo y soporte técnico de soluciones web para los proyectos de la agencia. Su trabajo se centra en transformar requisitos estratégicos y de diseño en implementaciones digitales funcionales, mantenibles y adaptadas a las necesidades del proyecto.",
+      "en": "Responsible for the development and technical support of web solutions for agency projects. His work focuses on turning strategic and design requirements into functional, maintainable digital implementations adapted to each project's needs."
+    },
+    "experience": {
+      "es": "Más de 6 años de experiencia trabajando en empresas de alto nivel.",
+      "en": "More than 6 years of experience working in high-level companies."
+    },
+    "skills": {
+      "es": [
+        "Desarrollo web",
+        "Implementación frontend",
+        "Arquitectura de sitios web",
+        "Responsive design",
+        "Optimización técnica",
+        "Mantenimiento web",
+        "Integración de interfaces",
+        "Resolución de problemas técnicos"
+      ],
+      "en": [
+        "Web Development",
+        "Frontend Implementation",
+        "Website Architecture",
+        "Responsive Design",
+        "Technical Optimization",
+        "Web Maintenance",
+        "Interface Integration",
+        "Technical Problem Solving"
+      ]
+    }
+  },
+  {
+    "id": "antonio",
+    "name": "Antonio León",
+    "provisional": true,
+    "image": {
+      "src": "assets/img/team/tony.webp",
+      "alt": {
+        "es": "Antonio León — Manager Comercial",
+        "en": "Antonio León — Business Manager"
+      }
+    },
+    "role": {
+      "es": "Manager Comercial",
+      "en": "Business Manager"
+    },
+    "description": {
+      "es": "Responsable de conectar la propuesta estratégica de la agencia con las necesidades comerciales de clientes y prospectos. Coordina oportunidades, seguimiento, relaciones comerciales y procesos de comunicación orientados a convertir interés en relaciones de negocio sostenibles.",
+      "en": "Responsible for connecting the agency's strategic offering with the commercial needs of clients and prospects. He coordinates opportunities, follow-up, business relationships, and communication processes aimed at turning interest into sustainable business relationships."
+    },
+    "experience": {
+      "es": "Experiencia en desarrollo comercial, negociación y gestión de relaciones con clientes.",
+      "en": "Experience in business development, negotiation, and client relationship management."
+    },
+    "skills": {
+      "es": [
+        "Desarrollo comercial",
+        "Gestión de clientes",
+        "Negociación",
+        "Prospección",
+        "Seguimiento comercial",
+        "Comunicación empresarial",
+        "Gestión de oportunidades",
+        "Coordinación entre cliente y equipo"
+      ],
+      "en": [
+        "Business Development",
+        "Client Management",
+        "Negotiation",
+        "Prospecting",
+        "Sales Follow-up",
+        "Business Communication",
+        "Opportunity Management",
+        "Client-Team Coordination"
+      ]
+    }
+  },
+  {
+    "id": "amanda",
+    "name": "Amanda Prieto",
+    "image": {
+      "src": "assets/img/team/amy.webp",
+      "alt": {
+        "es": "Amanda Prieto — Diseñadora Gráfica",
+        "en": "Amanda Prieto — Graphic Designer"
+      }
+    },
+    "role": {
+      "es": "Diseñadora Gráfica",
+      "en": "Graphic Designer"
+    },
+    "description": {
+      "es": "Responsable del desarrollo visual de marcas y materiales de comunicación. Convierte conceptos estratégicos en sistemas visuales coherentes, funcionales y adaptables a diferentes puntos de contacto.",
+      "en": "Responsible for the visual development of brands and communication materials. She turns strategic concepts into coherent, functional visual systems adaptable to different touchpoints."
+    },
+    "education": {
+      "es": "Licenciada en Diseño de Comunicación Visual — ISDI",
+      "en": "Bachelor's Degree in Visual Communication Design — ISDI"
+    },
+    "skills": {
+      "es": [
+        "Identidad visual",
+        "Branding",
+        "Diseño gráfico",
+        "Sistemas visuales",
+        "Diseño de comunicación",
+        "Composición",
+        "Tipografía",
+        "Diseño para medios digitales",
+        "Desarrollo de piezas de marca"
+      ],
+      "en": [
+        "Visual Identity",
+        "Branding",
+        "Graphic Design",
+        "Visual Systems",
+        "Communication Design",
+        "Composition",
+        "Typography",
+        "Digital Media Design",
+        "Brand Asset Development"
+      ]
+    }
+  },
+  {
+    "id": "samuel",
+    "name": "Samuel Rodríguez",
+    "image": {
+      "src": "assets/img/team/sam.webp",
+      "alt": {
+        "es": "Samuel Rodríguez — Analista de Datos",
+        "en": "Samuel Rodríguez — Data Analyst"
+      }
+    },
+    "role": {
+      "es": "Analista de Datos",
+      "en": "Data Analyst"
+    },
+    "description": {
+      "es": "Responsable de transformar datos de campañas, canales y comportamiento del cliente en información útil para la toma de decisiones. Su trabajo ayuda a identificar patrones, evaluar rendimiento y convertir métricas en recomendaciones accionables.",
+      "en": "Responsible for turning campaign, channel, and customer behavior data into useful information for decision-making. His work helps identify patterns, evaluate performance, and convert metrics into actionable recommendations."
+    },
+    "certification": {
+      "es": "Microsoft Certified: Power BI Data Analyst Associate",
+      "en": "Microsoft Certified: Power BI Data Analyst Associate"
+    },
+    "skills": {
+      "es": [
+        "Análisis de datos",
+        "Power BI",
+        "Visualización de datos",
+        "Modelado de datos",
+        "Reporting",
+        "Interpretación de métricas",
+        "Dashboards",
+        "Análisis de rendimiento",
+        "Extracción de insights",
+        "Soporte a decisiones basado en datos"
+      ],
+      "en": [
+        "Data Analysis",
+        "Power BI",
+        "Data Visualization",
+        "Data Modeling",
+        "Reporting",
+        "Metrics Interpretation",
+        "Dashboards",
+        "Performance Analysis",
+        "Insight Generation",
+        "Data-Driven Decision Support"
+      ]
+    }
+  }
+]

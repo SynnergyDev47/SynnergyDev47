@@ -1269,9 +1269,60 @@ main [id] {
 }
 
 .team-card__details {
+  display: grid;
+  gap: var(--space-md);
+  min-width: 0;
   margin-top: var(--space-md);
   padding-top: var(--space-md);
   border-top: 1px solid var(--color-border);
+}
+
+.team-card__details[hidden] {
+  display: none;
+}
+
+.team-card__description {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.team-card__highlight {
+  padding: var(--space-sm);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--color-accent-soft);
+}
+
+.team-card__detail-label {
+  margin-bottom: 0.4rem;
+  color: var(--color-text-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.team-card__skills {
+  min-width: 0;
+}
+
+.team-card__skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.team-card__skills li {
+  max-width: 100%;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface-soft);
+  color: var(--color-text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 48rem) {
@@ -1282,6 +1333,14 @@ main [id] {
   .team-card.is-expanded .team-card__photo {
     width: 7rem;
     height: 7rem;
+  }
+
+  .team-card__details {
+    grid-template-columns: minmax(14rem, 0.65fr) minmax(0, 1.35fr);
+  }
+
+  .team-card__description {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1437,6 +1496,542 @@ main [id] {
   margin-top: var(--space-xs);
   color: var(--color-text-muted);
   font-size: 0.82rem;
+}
+
+/* ==========================================
+   18. ITERACIÓN UX/UI Y CONVERSIÓN
+   ========================================== */
+
+/* Ritmo vertical: evita sumar gap del contenedor y márgenes de sus hijos. */
+h1 {
+  margin-top: 0;
+  text-wrap: balance;
+}
+
+.hero-section {
+  padding: var(--space-lg) 0 calc(var(--space-xl) * 0.85);
+}
+
+.hero-copy {
+  gap: 0.85rem;
+}
+
+.hero-copy .eyebrow,
+.hero-copy .button-row {
+  margin-block: 0;
+}
+
+.hero-copy h1 {
+  max-width: 15ch;
+  font-size: clamp(1.85rem, 4.5vw, 3.35rem);
+}
+
+.page-home .hero-copy h1 {
+  max-width: 22ch;
+}
+
+.page-home .content-section {
+  padding-bottom: var(--space-2xl);
+}
+
+@media (min-width: 48rem) {
+  .hero-section,
+  .page-inner .hero-section {
+    padding: calc(var(--space-xl) * 0.85) 0 var(--space-xl);
+  }
+}
+
+/* Servicios: encabezado compacto, tres planes principales y continuidad. */
+.services-section {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.services-heading {
+  margin-bottom: var(--space-lg);
+}
+
+.services-heading .section-kicker {
+  margin-top: 0;
+}
+
+.services-heading h1 {
+  max-width: 20ch;
+  font-size: clamp(2rem, 5vw, 3.35rem);
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: 1.45rem;
+}
+
+.pricing-card__header {
+  gap: 0.6rem;
+}
+
+.pricing-card__header .section-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+}
+
+.pricing-card__title {
+  font-size: clamp(1.5rem, 3vw, 1.95rem);
+}
+
+.pricing-card__price {
+  padding-bottom: 0.8rem;
+}
+
+.pricing-card__price strong {
+  font-size: clamp(1.8rem, 4vw, 2.45rem);
+}
+
+.pricing-card .card__body {
+  line-height: 1.5;
+}
+
+.pricing-card__features {
+  gap: 0.42rem;
+}
+
+.pricing-card__features li {
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.pricing-card__cta {
+  margin-top: auto;
+}
+
+.pricing-card--featured,
+.pricing-card--featured:hover {
+  transform: none;
+}
+
+@media (hover: hover) {
+  .pricing-card:hover,
+  .pricing-card--featured:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+    box-shadow: 0 26px 56px -32px var(--color-shadow), 0 0 20px -14px var(--color-accent);
+  }
+}
+
+.retainer-section {
+  padding: var(--space-lg) 0 var(--space-xl);
+}
+
+.retainer-card {
+  display: grid;
+  gap: var(--space-lg);
+  padding: clamp(1.35rem, 4vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  background: var(--glass-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.retainer-card__intro,
+.retainer-card__scope {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+}
+
+.retainer-card__intro .section-kicker {
+  margin: 0;
+}
+
+.retainer-card__eligibility {
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-text-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.retainer-card__flow {
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.retainer-card__scope h3 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+.retainer-card__price {
+  color: var(--color-text-strong);
+  font-weight: 700;
+}
+
+.projects-transition {
+  padding: 0 0 var(--space-2xl);
+}
+
+.projects-transition__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.projects-transition__inner > div {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.projects-transition .section-kicker {
+  margin: 0;
+}
+
+@media (min-width: 48rem) {
+  .retainer-card {
+    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  }
+
+  .projects-transition__inner {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .projects-transition__inner > div {
+    max-width: 42rem;
+  }
+}
+
+/* Equipo: hover estable y apertura progresiva de la ficha. */
+.team-card__summary,
+.team-card__photo {
+  transition: all 540ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.team-card__details {
+  display: grid;
+  grid-template-rows: 0fr;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  min-width: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 1px solid transparent;
+  opacity: 0;
+  transform: translateY(-0.3rem);
+  transition:
+    grid-template-rows 540ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 360ms ease,
+    transform 540ms cubic-bezier(0.22, 1, 0.36, 1),
+    margin-top 540ms cubic-bezier(0.22, 1, 0.36, 1),
+    padding-top 540ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 300ms ease;
+}
+
+.team-card__details-inner {
+  display: grid;
+  gap: var(--space-md);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.team-card.is-expanded .team-card__details {
+  grid-template-rows: 1fr;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-color: var(--color-border);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 48rem) {
+  .team-card__details-inner {
+    grid-template-columns: minmax(14rem, 0.65fr) minmax(0, 1.35fr);
+  }
+
+  .team-card__description {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (hover: hover) {
+  .team-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 24px 52px -34px var(--color-shadow);
+  }
+
+  .team-card.is-expanded:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.team-card.is-expanded {
+  transform: none;
+}
+
+/* Fases: el estado interactivo es visible también con teclado. */
+.process-tab {
+  border-radius: var(--radius-sm);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.process-tab:focus-visible {
+  outline: 3px solid var(--color-accent-soft);
+  outline-offset: 0.2rem;
+}
+
+@media (hover: hover) {
+  .process-tab:hover {
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
+  }
+
+  .process-tab:hover span {
+    border-color: var(--color-accent);
+    background: var(--color-surface-soft);
+    color: var(--color-accent);
+  }
+}
+
+.process-tab:focus-visible span {
+  border-color: var(--color-accent);
+  background: var(--color-surface-soft);
+  color: var(--color-accent);
+}
+
+.process-tab[aria-selected='true'],
+.process-tab[aria-selected='true']:hover {
+  background: transparent;
+}
+
+.process-tab[aria-selected='true'] span,
+.process-tab[aria-selected='true']:hover span {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+/* Miniartículos expandibles de metodología. */
+.method-articles {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-lg);
+}
+
+.method-article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.method-article h3 {
+  margin: 0;
+}
+
+.method-article__summary {
+  flex: 1;
+}
+
+.method-article__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+  color: var(--color-accent);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.method-article__toggle:focus-visible {
+  outline: 3px solid var(--color-accent-soft);
+  outline-offset: 0.2rem;
+}
+
+.method-article__toggle span:last-child {
+  font-size: 1.35rem;
+  transition: transform 220ms ease;
+}
+
+.method-article.is-expanded .method-article__toggle span:last-child {
+  transform: rotate(45deg);
+}
+
+.method-article__details {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: translateY(-0.25rem);
+  transition:
+    grid-template-rows 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 360ms ease,
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.method-article__details[hidden] {
+  display: none;
+}
+
+.method-article__details-inner {
+  display: grid;
+  gap: var(--space-sm);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.method-article.is-expanded .method-article__details {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 48rem) {
+  .method-articles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .method-article.is-expanded {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Contacto: formulario breve, canales directos y señales compactas. */
+.contact-intro {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.contact-intro__copy {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact-intro .eyebrow {
+  margin: 0;
+}
+
+.contact-intro h1 {
+  max-width: 20ch;
+  font-size: clamp(2rem, 5vw, 3.35rem);
+}
+
+.contact-form-section {
+  padding-bottom: var(--space-xl);
+}
+
+.contact-layout {
+  display: grid;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.contact-form {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.contact-form:hover {
+  transform: none;
+}
+
+.contact-form__heading {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.contact-form__heading .section-kicker {
+  margin: 0;
+}
+
+.form-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form-field {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.form-field label {
+  color: var(--color-text-strong);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.form-note,
+.contact-form__privacy {
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.form-note--eligibility {
+  padding: 0.6rem 0.75rem;
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--color-accent-soft);
+  color: var(--color-text-strong);
+  font-weight: 600;
+}
+
+.contact-form__submit {
+  width: 100%;
+}
+
+.contact-channels {
+  display: grid;
+  gap: 0.8rem;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-soft);
+}
+
+.contact-channels .section-kicker,
+.contact-channels .button-row {
+  margin: 0;
+}
+
+.contact-signals {
+  padding-bottom: var(--space-2xl);
+}
+
+@media (min-width: 48rem) {
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-field--full {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 62rem) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.55fr);
+  }
+
+  .contact-channels {
+    position: sticky;
+    top: 6rem;
+  }
 }
 
 @media (max-width: 23rem) {
