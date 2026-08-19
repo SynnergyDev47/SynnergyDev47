@@ -142,8 +142,6 @@ Synnergy Lab nace desde Cuba, pero está pensado para dialogar con el mundo. La 
 
 <div align="center">
 
-### Estrategia con propósito. Tecnología con criterio. Marketing que se puede sostener.
-
 <sub>Este repositorio evoluciona junto con Synnergy Lab.</sub>
 
 </div>
