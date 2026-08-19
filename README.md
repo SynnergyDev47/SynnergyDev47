@@ -24,7 +24,7 @@
 
 ## Sobre mí
 
-Soy **Aurelio — Synnergy**, desarrollador web y especialista en marketing. Vivo y trabajo desde **Cuba**, donde construyo soluciones digitales con una perspectiva práctica: tecnología ligera, estrategia clara y comunicación que ayude a tomar mejores decisiones.
+Soy **Aurelio — Synnergy Dev**, desarrollador web y especialista en marketing. Vivo y trabajo desde **Cuba**, donde construyo soluciones digitales con una perspectiva práctica: tecnología ligera, estrategia clara y comunicación que ayude a tomar mejores decisiones.
 
 Me interesa conectar dos mundos que a menudo se trabajan por separado:
 
