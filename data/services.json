@@ -23,15 +23,21 @@
     },
     "pricingStatus": "prototype",
     "features": {
-      "es": ["Diagnóstico Digital", "Diseño o Rediseño de Marca"],
-      "en": ["Digital Diagnosis", "Brand Design or Redesign"]
+      "es": [
+        "Diagnóstico Digital",
+        "Diseño o Rediseño de Marca"
+      ],
+      "en": [
+        "Digital Diagnosis",
+        "Brand Design or Redesign"
+      ]
     }
   },
   {
     "id": "integral",
     "title": {
-      "es": "Transformación",
-      "en": "Transformation"
+      "es": "Empresa",
+      "en": "Enterprise"
     },
     "kicker": {
       "es": "El recorrido completo",
@@ -56,8 +62,20 @@
       "en": "Complete"
     },
     "features": {
-      "es": ["Diagnóstico Digital", "Diseño o Rediseño de Marca", "Sistema de Ventas", "Lanzamiento de Campaña", "Análisis y Optimización"],
-      "en": ["Digital Diagnosis", "Brand Design or Redesign", "Sales System", "Campaign Launch", "Analysis and Optimization"]
+      "es": [
+        "Diagnóstico Digital",
+        "Diseño o Rediseño de Marca",
+        "Sistema de Ventas",
+        "Lanzamiento de Campaña",
+        "Análisis y Optimización"
+      ],
+      "en": [
+        "Digital Diagnosis",
+        "Brand Design or Redesign",
+        "Sales System",
+        "Campaign Launch",
+        "Analysis and Optimization"
+      ]
     }
   },
   {
@@ -84,8 +102,18 @@
     },
     "pricingStatus": "prototype",
     "features": {
-      "es": ["Diagnóstico Digital", "Sistema de Ventas", "Lanzamiento de Campaña", "Análisis y Optimización"],
-      "en": ["Digital Diagnosis", "Sales System", "Campaign Launch", "Analysis and Optimization"]
+      "es": [
+        "Diagnóstico Digital",
+        "Sistema de Ventas",
+        "Lanzamiento de Campaña",
+        "Análisis y Optimización"
+      ],
+      "en": [
+        "Digital Diagnosis",
+        "Sales System",
+        "Campaign Launch",
+        "Analysis and Optimization"
+      ]
     }
   }
 ]
